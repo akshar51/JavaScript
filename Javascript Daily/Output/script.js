@@ -6,7 +6,13 @@
 
 // INSERT CONTENT INTO HTML 
 let title=document.getElementById("heading");
-title.innerHTML="Hello Jscpt....<p>Lorem</p>";
-console.log(title);
+title.innerHTML+=" Hello Jscpt....<p>Lorem</p>";
+
 
 // INSERT CONTENT INTO HTML
+let content=document.getElementById("content");
+content.textContent="ECMA SCRIPT...";
+
+// PROMPT
+
+
