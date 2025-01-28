@@ -21,14 +21,14 @@
 
 
 //CLASSES
-class Person{
-    constructor(name){
-        this.name=name;
-    }
-    greet(){
-        console.log(`Hello,${this.name}`);
-    }
-}
+// class Person{
+//     constructor(name){
+//         this.name=name;
+//     }
+//     greet(){
+//         console.log(`Hello,${this.name}`);
+//     }
+// }
 
-let p1 = new Person("Rahul");
-p1.greet();
+// let p1 = new Person("Rahul");
+// p1.greet();
