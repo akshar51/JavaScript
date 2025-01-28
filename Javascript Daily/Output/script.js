@@ -5,14 +5,16 @@
 //alert("Error of alert..!!")
 
 // INSERT CONTENT INTO HTML 
-let title=document.getElementById("heading");
-title.innerHTML+=" Hello Jscpt....<p>Lorem</p>";
+// let title=document.getElementById("heading");
+// title.innerHTML+=" Hello Jscpt....<p>Lorem</p>";
 
 
 // INSERT CONTENT INTO HTML
-let content=document.getElementById("content");
-content.textContent="ECMA SCRIPT...";
+// let content=document.getElementById("content");
+// content.textContent="ECMA SCRIPT...";
 
 // PROMPT
 
+// let name1=prompt("Enter your name : ");
+// console.log(name1);
 
