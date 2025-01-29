@@ -14,8 +14,8 @@
 // content.textContent="ECMA SCRIPT...";
 
 // PROMPT
-// let name1=prompt("Enter your name : ");
-// console.log(name1);
+let name1=prompt("Enter your name : ");
+console.log(name1);
 
 // TEMPLATE LITERALS
 // let a=10;
