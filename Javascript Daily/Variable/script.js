@@ -23,9 +23,20 @@
 
 // Object
 
-let obj={
-    student:"aks",
-    age:33,
-    
-}
-console.log(obj);
+// let obj={
+//     student:"aks",
+//     age:33,
+// }
+// console.log(obj);
+
+// OPERATOR
+// 1) ARITHMETIC OPERATOR
+
+let a=10;
+let b=2;
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+console.log(a%b);
+console.log(a**3);// EXPONENTIAL-means power
