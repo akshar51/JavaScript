@@ -1,7 +1,7 @@
 // var 
-console.log(age);
-var age = 12;
-console.log(age)
+// console.log(age);
+// var age = 12;
+// console.log(age)
 
 // let 
 let name = "akshar";
@@ -14,4 +14,9 @@ console.log(age)
 
 // DATA TYPE
 // 1) NULL
-let 
+// let age=null;
+// console.log(age);
+
+// 2)Undefined
+// let studentName;
+// console.log(studentName);
