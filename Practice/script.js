@@ -1,5 +1,5 @@
-var isstatus=document.querySelector("h1");
-var btn = document.querySelector("#add");
+let isstatus=document.querySelector("h1");
+let btn = document.querySelector("#add");
 
 // var removefriend=document.querySelector("#remove");
 
@@ -15,7 +15,7 @@ var btn = document.querySelector("#add");
 // })
 
 // SINGLE BUTTON
-var check=0
+let check=0
 btn.addEventListener("click",function(){
     if(check == 0){
         isstatus.innerHTML="Friend";
