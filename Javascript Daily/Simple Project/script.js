@@ -19,8 +19,8 @@
 
 // BILL
 let p_name="Oil";
-let p_qty=2;
-let cost=160;
+let p_qty=5;
+let cost=20;
 
 let discount=0.1;
 let total = p_qty*cost;
