@@ -18,18 +18,18 @@
 //  }
 
 // BILL
-let p_name="Oil";
-let p_qty=2;
-let cost=160;
+// let p_name="Oil";
+// let p_qty=2;
+// let cost=160;
 
-let discount=0.1;
-let total=p_qty*cost;
-let net=total-discount;
+// let discount=0.1;
+// let total=p_qty*cost;
+// let net=total-discount;
 
-console.log("Quantity : ",p_qty);
-console.log("Cost :",cost);
-console.log("Total : ",total);
-console.log("Total after discount : ",net);
+// console.log("Quantity : ",p_qty);
+// console.log("Cost :",cost);
+// console.log("Total : ",total);
+// console.log("Total after discount : ",net);
 
 // SIMPLE INTEREST
 
@@ -42,3 +42,26 @@ console.log("Total after discount : ",net);
 // console.log("Rate of interest : ",R);
 // console.log("Number of year : ",N);
 // console.log("Interest : ",SI);
+
+//EMPLOYEE SALARY
+
+let B_salary=5000;
+let HRA=500;
+let MA=400;
+let DA=300;
+let TA=200;
+
+let PF=100;
+let PT=200;
+let TDS=450;
+
+let gross=B_salary + HRA + MA + DA + TA;
+let net=gross - PF - PT - TDS;
+
+console.log("Salary is : ",B_salary);
+console.log("House allowance : ",HRA);
+console.log("Medical allowance : ",MA);
+console.log("Dearness allowance : ",DA);
+console.log("Traveling allowance : ",TA);
+
+console.log("Net salary after PF,PT and TDS : ",net);
