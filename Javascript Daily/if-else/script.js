@@ -159,23 +159,86 @@
 
 // 12) SEASON BASED ON MONTH
 
-let month = 11;
-let season = ""
+// let month = 11;
+// let season = ""
 
-if(month === 12 || month === 1 || month === 2){
-    season = "Winter"
+// if(month === 12 || month === 1 || month === 2){
+//     season = "Winter"
+// }
+// else if( month >= 3 && month <= 5){
+//     season = "Spring"
+// }
+// else if(month >= 6 && month <= 8){
+//     season = "Summer"
+// }
+// else if(month >= 9 && month <= 11){
+//     season = "Autumn"
+// }
+// else{
+//     season = "Invalid month"
+// }
+
+// console.log(`${month} month is in ${season}.`)
+
+// 13) VOTING ELIGIBILITY WITH CITIZENSHIP
+
+// let personAge = 20
+// let isCitizen = true
+
+// if (personAge >= 18){
+//     if(isCitizen){
+//         console.log(`You are eligible to vote.`)
+//     }
+//     else{
+//         console.log(`You must be a citizen to vote.`)
+//     }
+// }
+// else{
+//     console.log(`You are not old enough to vote`)
+// }
+
+// 14) PASSWORD LENGTH CHECK
+
+// let passwordInput = "secret123"
+
+// if(passwordInput.length >= 8){
+//     console.log(`Password is acceptable.`)
+// }
+// else{
+//     console.log(`Password must be at least 8 characters long.`)
+// }
+
+// 15) MOVIE RATING ELIGIBILTY
+
+// let viewerAge = 15;
+//  if(viewerAge >= 18){
+//     console.log(`You can watch this movie`)
+//  }
+//  else{
+//     console.log(`You are too young to watch this movie`)
+//  }
+
+// 16) SIMPLE PRIME NUMBER
+
+let primeCandidate = 17
+let isPrime = true
+
+
+if (primeCandidate <= 1) {
+    isPrime = false;
 }
-else if( month >= 3 && month <= 5){
-    season = "Spring"
+else {
+    for (let i = 2; i < primeCandidate; i++) {
+        if (primeCandidate % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
 }
-else if(month >= 6 && month <= 8){
-    season = "Summer"
-}
-else if(month >= 9 && month <= 11){
-    season = "Autumn"
-}
+
+if (isPrime) {
+    console.log(`${primeCandidate} is a prime number.`);
+} 
 else{
-    season = "Invalid month"
+    console.log(`${primeCandidate} is not a prime number.`);
 }
-
-console.log(`${month} month is in ${season}.`)
