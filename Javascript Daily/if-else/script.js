@@ -45,6 +45,23 @@
 //     console.log(`Grade : F`)
 // }
 
+// 5) LOGIN SIMULATION
+
+// let username="admin"
+// let password="12345"
+
+// if(username==="admin"){
+//     if(password==="12345"){
+//         console.log(`Login successfull !`)
+//     }
+//     else{
+//         console.log(`Incorrect password.`)
+//     }
+// }
+// else{
+//     console.log(`Unknown username.`)
+// }
+
 
 
 
