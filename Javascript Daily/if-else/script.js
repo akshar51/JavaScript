@@ -220,25 +220,45 @@
 
 // 16) SIMPLE PRIME NUMBER
 
-let primeCandidate = 17
-let isPrime = true
+// let primeCandidate = 17
+// let isPrime = true
 
 
-if (primeCandidate <= 1) {
-    isPrime = false;
+// if (primeCandidate <= 1) {
+//     isPrime = false;
+// }
+// else {
+//     for (let i = 2; i < primeCandidate; i++) {
+//         if (primeCandidate % i === 0) {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+// }
+
+// if (isPrime) {
+//     console.log(`${primeCandidate} is a prime number.`);
+// } 
+// else{
+//     console.log(`${primeCandidate} is not a prime number.`);
+// }
+
+// 18) AREA BASED ON SHAPE TYPE
+
+let shape = "circle"
+let area = 0
+
+if(shape === "circle"){
+    let radius = 5
+    area = Math.PI * radius * radius
+    console.log(`Area of circle is ${area.toFixed(2)}`)
 }
-else {
-    for (let i = 2; i < primeCandidate; i++) {
-        if (primeCandidate % i === 0) {
-            isPrime = false;
-            break;
-        }
-    }
+else if( shape === "rectangle"){
+    let length=10
+    let width = 4
+    area = length * width
+    console.log(`Area of rectangle is ${area}`)
 }
-
-if (isPrime) {
-    console.log(`${primeCandidate} is a prime number.`);
-} 
 else{
-    console.log(`${primeCandidate} is not a prime number.`);
+    console.log(`Shape not recognized.`)
 }
