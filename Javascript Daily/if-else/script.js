@@ -143,16 +143,39 @@
 // }
 
 // 11) TWO NUMBER ARE BOTH POSITVE 
-let a = 5
-let b = -3
+// let a = 5
+// let b = -3
 
-if (a > 0) {
-    if (b > 0) {
-        console.log(`Both numbers are positive.`);
-    } else {
-        console.log(`a is positive, but b is not positive.`);
-    }
+// if (a > 0) {
+//     if (b > 0) {
+//         console.log(`Both numbers are positive.`);
+//     } else {
+//         console.log(`a is positive, but b is not positive.`);
+//     }
+// }
+// else {
+//     console.log(`a is not positive.`);
+// }
+
+// 12) SEASON BASED ON MONTH
+
+let month = 11;
+let season = ""
+
+if(month === 12 || month === 1 || month === 2){
+    season = "Winter"
 }
-else {
-    console.log(`a is not positive.`);
+else if( month >= 3 && month <= 5){
+    season = "Spring"
 }
+else if(month >= 6 && month <= 8){
+    season = "Summer"
+}
+else if(month >= 9 && month <= 11){
+    season = "Autumn"
+}
+else{
+    season = "Invalid month"
+}
+
+console.log(`${month} month is in ${season}.`)
