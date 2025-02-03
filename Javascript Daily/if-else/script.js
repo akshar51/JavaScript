@@ -62,6 +62,50 @@
 //     console.log(`Unknown username.`)
 // }
 
+// 6) TEMPERATURE CLASSIFICATION
+// let temperature = 28;
+//  if(temperature > 30){
+//     console.log(`Hot outside`)
+//  }
+//  else if(temperature>=20){
+//     console.log(`Warm outside`)
+//  }
+//  else{
+//     console.log(`Cold outside`)
+//  }
+
+// 7) DAY OF WEEK 
+let dayNumber=4;
+let dayName=""
+
+if(dayNumber===1){
+    dayName = "Monday"
+}
+else if(dayNumber===2){
+    dayName = "Tuesday"
+}
+else if(dayNumber===3){
+    dayName = "Wednesday"
+}
+else if(dayNumber===4){
+    dayName = "Thursday"
+}
+else if(dayNumber===5){
+    dayName = "Friday"
+}
+else if(dayNumber===6){
+    dayName = "Saturday"
+}
+else if(dayNumber===7){
+    dayName = "Sunday"
+}
+else{
+    dayName = "Invalid day"
+}
+
+console.log(`Day ${dayNumber} is ${dayName}.`)
+
+
 
 
 
