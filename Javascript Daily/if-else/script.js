@@ -107,21 +107,37 @@
 
 // 8) DISCOUNT ELIGIBILITY
 
-let isMember = true;
-let spending = 150;
+// let isMember = true;
+// let spending = 150;
 
-if(isMember){
-    if(spending > 100){
-        console.log(`You get a 20% discount.`)
-    }
-    else{
-        console.log(`You get a 10% discount.`)
-    }
+// if(isMember){
+//     if(spending > 100){
+//         console.log(`You get a 20% discount.`)
+//     }
+//     else{
+//         console.log(`You get a 10% discount.`)
+//     }
+// }
+// else{
+//     console.log(`No discount available for non-member`)
+// }
+
+
+// 9) CHECK STRING IS EMPTY 
+//  let str = "";
+//  if(str===""){
+//     console.log(`String is empty.`)
+//  }
+//  else{
+//     console.log(`String is not empty.`)
+//  }
+
+// 10) LEAP YEAR 
+let year = 2024;
+
+if(( year % 4 ===0 && year % 100 !==0) || (year % 400 ===0)){
+    console.log(`${year} is a leap year.`)
 }
 else{
-    console.log(`No discount available for non-member`)
+    console.log(`${year} is not a leap year.`)
 }
-
-
-
-
