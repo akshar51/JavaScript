@@ -245,20 +245,43 @@
 
 // 18) AREA BASED ON SHAPE TYPE
 
-let shape = "circle"
-let area = 0
+// let shape = "circle"
+// let area = 0
 
-if(shape === "circle"){
-    let radius = 5
-    area = Math.PI * radius * radius
-    console.log(`Area of circle is ${area.toFixed(2)}`)
-}
-else if( shape === "rectangle"){
-    let length=10
-    let width = 4
-    area = length * width
-    console.log(`Area of rectangle is ${area}`)
+// if(shape === "circle"){
+//     let radius = 5
+//     area = Math.PI * radius * radius
+//     console.log(`Area of circle is ${area.toFixed(2)}`)
+// }
+// else if( shape === "rectangle"){
+//     let length=10
+//     let width = 4
+//     area = length * width
+//     console.log(`Area of rectangle is ${area}`)
+// }
+// else{
+//     console.log(`Shape not recognized.`)
+// }
+
+// 19) USER LOGIN VERIFICATION
+let inputUsername = "user1"
+let inputPassword = "pass123"
+
+if(inputUsername === "user1" && inputPassword === "pass123"){
+    console.log(`User login succesful.`)
 }
 else{
-    console.log(`Shape not recognized.`)
+    console.log(`Invalid username or password.`)
+}
+
+// 20) MULTIPLE CONDITION CHECK
+let customerAge = 30
+let isMemberStatus = true
+let purchaseAmount = 250
+
+if(customerAge >=25 && isMemberStatus && purchaseAmount >= 200){
+    console.log(`Congratulation ! You qualify for our special offer.`)
+}
+else{
+    console.log(`Sorry , you do not qualify for the special offer.`)
 }
