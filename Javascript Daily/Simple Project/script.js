@@ -18,30 +18,30 @@
 //  }
 
 // BILL
-let p_name="Oil";
-let p_qty=5;
-let cost=20;
+// let p_name="Oil";
+// let p_qty=5;
+// let cost=20;
 
-let discount=0.1;
-let total = p_qty*cost;
-let net = total-(total*discount);
+// let discount=0.1;
+// let total = p_qty*cost;
+// let net = total-(total*discount);
 
-console.log("Quantity : ",p_qty);
-console.log("Cost :",cost);
-console.log("Total : ",total);
-console.log("Total after discount : ",net);
+// console.log("Quantity : ",p_qty);
+// console.log("Cost :",cost);
+// console.log("Total : ",total);
+// console.log("Total after discount : ",net);
 
 // SIMPLE INTEREST
 
-// let P=5000;
-// let R=5;
-// let N=2;
+let P=5000;
+let R=5;
+let N=2;
 
-// let SI = (P*R*N)/100;
-// console.log("Principle amount is : ",P);
-// console.log("Rate of interest : ",R);
-// console.log("Number of year : ",N);
-// console.log("Interest : ",SI);
+let SI = (P*R*N)/100;
+console.log("Principle amount is : ",P);
+console.log("Rate of interest : ",R);
+console.log("Number of year : ",N);
+console.log("Interest : ",SI);
 
 //EMPLOYEE SALARY
 
