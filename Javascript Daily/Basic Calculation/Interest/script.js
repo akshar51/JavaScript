@@ -13,5 +13,5 @@ let interest = P_amount>=500000?(P_amount * R_rate1 * N_year)/100
 
 console.log(`Principle amount is :${P_amount}`);
 console.log(`Number of year is : ${N_year}`);
-console.log(`Interest on ${P_amount}is : ${interest}`);
+console.log(`Interest on ${P_amount} is : ${interest}`);
 
