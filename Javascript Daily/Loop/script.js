@@ -28,11 +28,27 @@
 
 // 11) FACTORIAL OF NUMBER
 
-let num = 5 ;
-let fact = 1 ;
+// let num = 5 ;
+// let fact = 1 ;
 
-for(let i=1;i<=num;i++){
-    fact=fact*i;
+// for(let i=1;i<=num;i++){
+//     fact=fact*i;
+// }
+// console.log(`Factorial is : ${fact}`);
+
+
+// 12) FIND THE SUM OF DIGIT
+
+let num = 1234;
+let sum = 0;
+
+while(num>0){
+    sum = sum + num % 10;
+    num = Math.floor(num/10);
 }
-console.log(`Factorial is : ${fact}`);
+console.log(`Sum of all digit is : ${sum}`)
+
+// 13) REVERSE A NUMBER
+let num = 1234;
+let rev = 0;
 
