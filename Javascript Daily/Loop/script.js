@@ -103,11 +103,24 @@
 
 // 17) CALCUALTE POWER OF NUMBER
 
-let base = 2;
-let exp = 3;
-let result = 1;
+// let base = 2;
+// let exp = 3;
+// let result = 1;
 
-for(let i=0;i<exp;i++){
-    result = result * base;
+// for(let i=0;i<exp;i++){
+//     result = result * base;
+// }
+// console.log(`${base} raised to ${exp} = ${result}`)
+
+// 18) CHECK IF NUMBER IS ARMSTRONG NUMBER
+
+let num = 153;
+let sum = 0;
+let temp = num;
+
+while(temp>0){
+    let digit = temp % 10;
+    sum = sum + digit**3;
+    temp = Math.floor(temp/10);
 }
-console.log(`${base} raised to ${exp} = ${result}`)
+console.log(`${num} is armstrong ${sum===num}`)
