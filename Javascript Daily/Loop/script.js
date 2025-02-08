@@ -61,13 +61,28 @@
 
 // 14) CHECK IF NUMBER IS PRIME
 
-let num = 7;
-let isPrime = true;
- for(let i=2;i<=Math.sqrt(num);i++){
-    if(num % i === 0){
-        isPrime = false;
-        break;
-    }
+// let num = 7;
+// let isPrime = true;
+//  for(let i=2;i<=Math.sqrt(num);i++){
+//     if(num % i === 0){
+//         isPrime = false;
+//         break;
+//     }
+//  }
+//  console.log(`${num} is prime ${isPrime}`)
+
+ // 15) FIBONACCI SERIES UPTO 10 TERM
+
+ let a = 0;
+ let b = 1;
+ let temp;
+ console.log(a);
+ console.log(b);
+ 
+ for(let i=2;i<10;i++){
+    temp = a + b;
+    console.log(temp)
+    a = b;
+    b = temp;
  }
- console.log(`${num} is prime ${isPrime}`)
 
