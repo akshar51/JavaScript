@@ -114,13 +114,25 @@
 
 // 18) CHECK IF NUMBER IS ARMSTRONG NUMBER
 
-let num = 153;
-let sum = 0;
-let temp = num;
+// let num = 153;
+// let sum = 0;
+// let temp = num;
 
-while(temp>0){
-    let digit = temp % 10;
-    sum = sum + digit**3;
-    temp = Math.floor(temp/10);
+// while(temp>0){
+//     let digit = temp % 10;
+//     sum = sum + digit**3;
+//     temp = Math.floor(temp/10);
+// }
+// console.log(`${num} is armstrong ${sum===num}`)
+
+// 19) GREATEST COMMON DIVISOR (GCD) OF TWO NUMBER
+
+let a = 48;
+let b = 18;
+
+while(b!==0){
+    let temp = b;
+    b = a % b;
+    a = temp;
 }
-console.log(`${num} is armstrong ${sum===num}`)
+console.log(`GCD ${a}`);
