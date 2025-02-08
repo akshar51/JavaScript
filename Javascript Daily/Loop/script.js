@@ -73,16 +73,41 @@
 
  // 15) FIBONACCI SERIES UPTO 10 TERM
 
- let a = 0;
- let b = 1;
- let temp;
- console.log(a);
- console.log(b);
+//  let a = 0;
+//  let b = 1;
+//  let temp;
+//  console.log(a);
+//  console.log(b);
  
- for(let i=2;i<10;i++){
-    temp = a + b;
-    console.log(temp)
-    a = b;
-    b = temp;
- }
+//  for(let i=2;i<10;i++){
+//     temp = a + b;
+//     console.log(temp)
+//     a = b;
+//     b = temp;
+//  }
 
+// 16) FIND LARGEST DIGIT IN NUMBER
+
+// let num = 8375;
+// let maxDigit = 0;
+
+// while(num > 0){
+//     let digit = num % 10;
+//     if(digit > maxDigit){
+//         maxDigit = digit;
+//     }
+//     num = Math.floor(num/10);
+    
+// }
+// console.log(`Largest digit is : ${maxDigit}`)
+
+// 17) CALCUALTE POWER OF NUMBER
+
+let base = 2;
+let exp = 3;
+let result = 1;
+
+for(let i=0;i<exp;i++){
+    result = result * base;
+}
+console.log(`${base} raised to ${exp} = ${result}`)
