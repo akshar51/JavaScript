@@ -39,16 +39,35 @@
 
 // 12) FIND THE SUM OF DIGIT
 
-let num = 1234;
-let sum = 0;
+// let num = 1234;
+// let sum = 0;
 
-while(num>0){
-    sum = sum + num % 10;
-    num = Math.floor(num/10);
-}
-console.log(`Sum of all digit is : ${sum}`)
+// while(num>0){
+//     sum = sum + num % 10;
+//     num = Math.floor(num/10);
+// }
+// console.log(`Sum of all digit is : ${sum}`)
 
 // 13) REVERSE A NUMBER
-let num = 1234;
-let rev = 0;
+// let num = 1234;
+// let rev = 0;
+
+// while(num > 0){
+//     rev = rev *10 + (num % 10);
+//     num = Math.floor(num / 10);
+// }
+
+// console.log(`Reversed number is : ${rev}`)
+
+// 14) CHECK IF NUMBER IS PRIME
+
+let num = 7;
+let isPrime = true;
+ for(let i=2;i<=Math.sqrt(num);i++){
+    if(num % i === 0){
+        isPrime = false;
+        break;
+    }
+ }
+ console.log(`${num} is prime ${isPrime}`)
 
