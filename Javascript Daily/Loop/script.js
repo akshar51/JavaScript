@@ -127,12 +127,28 @@
 
 // 19) GREATEST COMMON DIVISOR (GCD) OF TWO NUMBER
 
-let a = 48;
-let b = 18;
+// let a = 48;
+// let b = 18;
 
-while(b!==0){
-    let temp = b;
-    b = a % b;
-    a = temp;
+// while(b!==0){
+//     let temp = b;
+//     b = a % b;
+//     a = temp;
+// }
+// console.log(`GCD ${a}`);
+
+// 20) LEAST COMMON MULTIPLE (LCM) OF TWO NUMBER
+
+let a = 12;
+let b = 15;
+let lcm = (a*b)/gcd(a,b);
+
+function gcd(x,y){
+    while(y){
+        let temp = y;
+        y = x % y;
+        x = temp;
+    }
+    return x;
 }
-console.log(`GCD ${a}`);
+console.log(`LCM : ${lcm}`)
