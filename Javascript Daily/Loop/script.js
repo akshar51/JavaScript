@@ -20,7 +20,19 @@
 // }while(j!=5);
 
 // NOT INFINITE LOOP
-let k=5;
-do{
-    console.log(k);
-}while(k!=5);
+// let k=5;
+// do{
+//     console.log(k);
+// }while(k!=5);
+
+
+// 11) FACTORIAL OF NUMBER
+
+let num = 5 ;
+let fact = 1 ;
+
+for(let i=1;i<=num;i++){
+    fact=fact*i;
+}
+console.log(`Factorial is : ${fact}`);
+
