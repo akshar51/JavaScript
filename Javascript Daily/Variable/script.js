@@ -40,3 +40,25 @@
 // console.log(a/b);
 // console.log(a%b);
 // console.log(a**3);// EXPONENTIAL-means power
+
+
+let num = 11011;
+let rev = 0;
+let newNumber = num;
+while(num > 0){
+    rev = rev *10 + (num % 10);
+    num = Math.floor(num / 10);
+}
+
+if(newNumber === rev){
+    console.log(`Palindrome`)
+}
+else{
+    console.log(`Not`)
+}
+// if(num1 === rev){
+//     console.log(`Palindrome`)
+// }
+// else{
+//     console.log(`Not`)
+// }

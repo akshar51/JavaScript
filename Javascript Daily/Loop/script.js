@@ -233,3 +233,24 @@ function gcd(x,y){
     return x;
 }
 console.log(`LCM : ${lcm}`)
+
+// 21) CHECK IF NUMBER IS PALINDROME
+
+let num = 11011;
+let rev = 0;
+let newNumber = num;
+while(num > 0){
+    rev = rev *10 + (num % 10);
+    num = Math.floor(num / 10);
+}
+
+if(newNumber === rev){
+    console.log(`Palindrome`);
+}
+else{
+    console.log(`Not`);
+}
+
+// 22) DIAMOND PATTERN USING NESTED LOOP
+
+
