@@ -139,16 +139,16 @@
 
 // 20) LEAST COMMON MULTIPLE (LCM) OF TWO NUMBER
 
-let a = 12;
-let b = 15;
-let lcm = (a*b)/gcd(a,b);
+// let a = 12;
+// let b = 15;
+// let lcm = (a*b)/gcd(a,b);
 
-function gcd(x,y){
-    while(y){
-        let temp = y;
-        y = x % y;
-        x = temp;
-    }
-    return x;
-}
-console.log(`LCM : ${lcm}`)
+// function gcd(x,y){
+//     while(y){
+//         let temp = y;
+//         y = x % y;
+//         x = temp;
+//     }
+//     return x;
+// }
+// console.log(`LCM : ${lcm}`)
