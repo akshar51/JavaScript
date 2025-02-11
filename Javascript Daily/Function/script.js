@@ -36,7 +36,7 @@ while(i<=5){
 }
 
 
-// FACTORIAL
+// FACTORIAL USINF RECURSION
 
 function fact(value){
     let f1;
@@ -46,7 +46,7 @@ function fact(value){
     else{
         f1 = fact(value - 1);
     }
-    console.log(value+"*"+fact);
-    return value * fact;
+    console.log(value+"*"+f1);
+    return value * f1;
 }
 console.log(fact(5));
