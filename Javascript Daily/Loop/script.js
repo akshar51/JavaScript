@@ -309,3 +309,14 @@ for (let i = 0; i < n; i++) {
 
 // 30) FIND SUM OF ALL ODD DIGIT IN NUMBER
 
+let num = 13579;
+let sum = 0;
+
+while(num>0){
+    let newNum = num % 10
+    if(newNum % 2 !=0){
+        sum = sum + newNum;
+    }
+    num = Math.floor(num/10);
+}
+console.log(`Sum of all odd digit is : ${sum}`)

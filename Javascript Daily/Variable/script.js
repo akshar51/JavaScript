@@ -76,16 +76,28 @@
 //     }
 // }
 
-let n = parseInt(prompt("Enter the size of the square:"));
+// let n = parseInt(prompt("Enter the size of the square:"));
 
-for (let i = 0; i < n; i++) { // Loop for rows
-    let row = "";
-    for (let j = 0; j < n; j++) { // Loop for columns
-        if (i === 0 || i === n - 1 || j === 0 || j === n - 1) {
-            row += "* ";
-        } else {
-            row += "  "; // Print space for the hollow part
-        }
+// for (let i = 0; i < n; i++) { // Loop for rows
+//     let row = "";
+//     for (let j = 0; j < n; j++) { // Loop for columns
+//         if (i === 0 || i === n - 1 || j === 0 || j === n - 1) {
+//             row += "* ";
+//         } else {
+//             row += "  "; // Print space for the hollow part
+//         }
+//     }
+//     console.log(row); // Print each row
+// }
+
+let num = 13579;
+let sum = 0;
+
+while(num>0){
+    let newNum = num % 10
+    if(newNum % 2 !=0){
+        sum = sum + newNum;
     }
-    console.log(row); // Print each row
+    num = Math.floor(num/10);
 }
+console.log(`Sum of all odd digit is : ${sum}`)
