@@ -306,3 +306,6 @@ for (let i = 0; i < n; i++) {
     }
     console.log(row); 
 }
+
+// 30) FIND SUM OF ALL ODD DIGIT IN NUMBER
+
