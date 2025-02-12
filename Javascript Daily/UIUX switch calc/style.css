@@ -38,14 +38,15 @@ form button{
     width: 100%;
     text-align: center;
     padding: 12px;
-}
-
-#result span{
-    font-size: 20px;
     
 }
 
+#result span{
+    font-size: 30px;
+}
+
 .box-button button{
+    margin-top: 20px;
     font-size: 20px;
     padding: 16px 20px;
     font-weight: 700;
