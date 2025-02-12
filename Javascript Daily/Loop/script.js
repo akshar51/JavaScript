@@ -251,9 +251,6 @@ else{
     console.log(`Not`);
 }
 
-// 22) DIAMOND PATTERN USING NESTED LOOP
-
-
 // 23)SUM OF FIRST N PRIME NUMBER
 
 let sum = 0;
