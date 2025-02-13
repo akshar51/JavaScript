@@ -10,3 +10,17 @@ function printValue(){
     document.getElementById('result').classList.remove('hidden')
     document.getElementById('result').classList.add('active')
 }
+
+function Operation(type){
+    switch(type){
+        case "add":
+            document.getElementById('ans').innerHTML = parseInt(num1) + parseInt(num2)
+        break;
+        case 'sub':
+        break;
+        case 'mult':
+        break;
+        case 'div':
+        break;
+    }
+}
