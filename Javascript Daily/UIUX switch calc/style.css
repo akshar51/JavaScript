@@ -16,11 +16,7 @@ body{
     padding: 50px;
     background-color: rgb(184, 197, 130);
 }
-/* form div{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-} */
+
 
 form{
     text-align: center;
@@ -65,7 +61,7 @@ form button{
 }
 
 #ans{
-    width: 100px;
+    width: auto;
     height: 100px;
     background-color: white;
     display: flex;
