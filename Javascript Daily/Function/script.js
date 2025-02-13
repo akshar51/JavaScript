@@ -24,29 +24,41 @@
 
 // FIBONACCI SERIES
 
-let f,f1 = 0,f2 = 1;
-let i=1;
-let str=""
-while(i<=5){
-    f = f1;
-    f1 = f+f2;
-    f2 = f;
-    console.log(f)
-    i++;
-}
+// let f,f1 = 0,f2 = 1;
+// let i=1;
+// let str=""
+// while(i<=5){
+//     f = f1;
+//     f1 = f+f2;
+//     f2 = f;
+//     console.log(f)
+//     i++;
+// }
 
 
 // FACTORIAL USINF RECURSION
 
-function fact(value){
-    let f1;
-    if(value<=1){
-        return 1;
+// function fact(value){
+//     let f1;
+//     if(value<=1){
+//         return 1;
+//     }
+//     else{
+//         f1 = fact(value - 1);
+//     }
+//     console.log(value+"*"+f1);
+//     return value * f1;
+// }
+// console.log(fact(5));
+
+setTimeout(function(){
+    let f,f1=0,f2=1;
+    let i = 1;
+    while(i<=5){
+        f = f1;
+        f1 = f + f2
+        f2 = f;
+        document.getElementById('ans').innerHTML += f;
+        i++;
     }
-    else{
-        f1 = fact(value - 1);
-    }
-    console.log(value+"*"+f1);
-    return value * f1;
-}
-console.log(fact(5));
+},2000);
