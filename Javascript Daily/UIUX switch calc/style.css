@@ -35,16 +35,14 @@ form button{
     padding: 16px 10px;
     width: 100px;
     font-weight: 700;
+    border-radius: 5px;
 }
 
 #result{
-    /* border: 1px solid black; */
     width: 100%;
-    /* text-align: center; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 12px;
+    text-align: center;
+    position: relative;
 }
 
 #result span{
@@ -58,22 +56,23 @@ form button{
     font-weight: 700;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
+
 .active{
-    display:block
+    display: block;
 }
 
 #ans{
     width: 100px;
     height: 100px;
     background-color: white;
-    margin-top: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 26px;
     border-radius: 5px;
+    margin: 16px auto;
 }
 
