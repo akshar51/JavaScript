@@ -51,14 +51,27 @@
 // }
 // console.log(fact(5));
 
-setTimeout(function(){
-    let f,f1=0,f2=1;
-    let i = 1;
-    while(i<=5){
-        f = f1;
-        f1 = f + f2
-        f2 = f;
-        document.getElementById('ans').innerHTML += f;
-        i++;
-    }
-},2000);
+// setTimeout(function(){
+//     let f,f1=0,f2=1;
+//     let i = 1;
+//     while(i<=5){
+//         f = f1;
+//         f1 = f + f2
+//         f2 = f;
+//         document.getElementById('ans').innerHTML += f;
+//         i++;
+//     }
+// },2000);
+
+// setInterval(function(){
+//     let f,f1=0,f2=1;
+//     let i = 1;
+//     while(i<=5){
+//         f = f1;
+//         f1 = f + f2
+//         f2 = f;
+//         document.getElementById('ans').innerHTML += f;
+//         i++;
+//     }
+// },5000);
+
