@@ -75,7 +75,7 @@
 //     }
 // },5000);
 
-
+// FIBONACCI USING ARROW FUNCTION
 let fib = ()=>{
     let f,f1=0;f2=1;
     let i=1;
