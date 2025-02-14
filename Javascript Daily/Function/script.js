@@ -75,3 +75,16 @@
 //     }
 // },5000);
 
+
+let fib = ()=>{
+    let f,f1=0;f2=1;
+    let i=1;
+    while(i<=7){
+        f = f1;
+        f1 = f2 + f;
+        f2 = f;
+        console.log(f);
+        i++; 
+    }
+}
+fib();
