@@ -22,22 +22,39 @@ let num2 = document.getElementById("num2");
 num2.addEventListener("click",function(){
     document.getElementById("screen").innerHTML += 2;
     num2=2;
+    
 })
 
 let num3 = document.getElementById("num3");
 num3.addEventListener("click",function(){
     document.getElementById("screen").innerHTML += 3;
     num3=3;
+   
 })
 
+let add = 0;
+let sub = 0;
 let operation=(type)=>{
     switch(type){
         case 'add':
             document.getElementById("screen").innerText += "+"
-            let newNum =document.getElementById("screen").innerHTML = parseInt(num1) + parseInt(num2);
+            add++;
+            // let newNum =document.getElementById("screen").innerHTML = parseInt(num1) + parseInt(num2);
         break;
         case 'sub':
+            document.getElementById("screen").innerText += "-"
+            sub++;
+        break;
+        case 'equal':
+        if(add>0){
+            document.getElementById("screen").innerHTML = parseInt(num1) + parseInt(num2);
+        }
+        else if(sub>0){
             document.getElementById("screen").innerHTML = parseInt(num1) - parseInt(num2);
+        }
+        else{
+            console.log("Invalid")
+        }
         break;
     }
 }
