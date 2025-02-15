@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    height: 100vh;
+   
+}
+
+.main{
+    width: 300px;
+    height:400px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 22px;
+    padding: 14px;
+}
+
+.screen{
+    height: 100px;
+    background-color: rgb(150, 150, 150);
+    border-radius: 12px;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: auto;
+    margin-top: 15px;
+    
+}
+
+.btn :nth-child(3){
+    background-color: rgb(254, 161, 22);
+}
+.btn :nth-child(6){
+    background-color: rgb(254, 161, 22);
+}
+.btn1{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(254, 161, 22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lg-btn{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.lg-btn :last-child{
+    background-color: rgb(254, 161, 22);
+}
+.xl-btn{
+    width: 62%;
+    height: 70px;
+    background-color: rgb(144, 144, 144);
+    border-radius:32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+}
