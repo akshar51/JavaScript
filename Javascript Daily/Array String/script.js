@@ -9,9 +9,12 @@
 // console.log(arr);
 
 
-// SHIFT ()
+// SHIFT (Delete element at start)
+// let arr = ["a","b","c","d","e"];
+// arr.shift();
+// console.log(arr)
 
-let arr = ["a","b","c","d","e"];
-arr.shift();
+// UNSHIFT ()
+let arr = [10,"a",20];
+arr.unshift("z");
 console.log(arr)
-
