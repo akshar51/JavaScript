@@ -23,3 +23,7 @@
 // AT (INDEX VALUE)
 let arr = ["a",10,"b",20];
 console.log(arr.at(3));
+
+// SLICE 
+let arr1 = [10,2,30,4,35,25];
+
