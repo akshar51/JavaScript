@@ -14,7 +14,12 @@
 // arr.shift();
 // console.log(arr)
 
-// UNSHIFT ()
-let arr = [10,"a",20];
-arr.unshift("z");
-console.log(arr)
+// UNSHIFT (Add element at start)
+// let arr = [10,"a",20];
+// arr.unshift("z");
+// console.log(arr)
+
+
+// AT (INDEX VALUE)
+let arr = ["a",10,"b",20];
+console.log(arr.at(3));
