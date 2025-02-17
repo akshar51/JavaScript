@@ -21,9 +21,10 @@
 
 
 // AT (INDEX VALUE)
-let arr = ["a",10,"b",20];
-console.log(arr.at(3));
+// let arr = ["a",10,"b",20];
+// console.log(arr.at(3));
 
-// SLICE 
-let arr1 = [10,2,30,4,35,25];
-
+// SLICE ( Give the array from start to end (slice(start,end)) )
+// let arr1 = [10,2,30,4,35,25];
+// let array = arr1.slice(0,2);
+// console.log(array)
