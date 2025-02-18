@@ -62,5 +62,18 @@
 // console.log(text.includes("World"));
 
 // STRING SPLIT
-let text = "Hello,World,Javascript";
-console.log(text.split(","));
+// let text = "Hello,World,Javascript";
+// console.log(text.split(","));
+
+// STRING CONCAT
+// let text1 = "Hello";
+// let text2 = "World";
+// console.log(text1.concat(" ",text2));
+
+// STRING REPEAT
+// let text = "Hello";
+// console.log(text.repeat(3));
+
+// STRING PADSTART
+let text = "5";
+console.log(text.padStart(4, "0"));
