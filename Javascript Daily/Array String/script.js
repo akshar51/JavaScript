@@ -8,7 +8,6 @@
 // arr.push("e")
 // console.log(arr);
 
-
 // SHIFT (Delete element at start)
 // let arr = ["a","b","c","d","e"];
 // arr.shift();
@@ -18,7 +17,6 @@
 // let arr = [10,"a",20];
 // arr.unshift("z");
 // console.log(arr)
-
 
 // AT (INDEX VALUE)
 // let arr = ["a",10,"b",20];
