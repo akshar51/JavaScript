@@ -75,5 +75,17 @@
 // console.log(text.repeat(3));
 
 // STRING PADSTART
-let text = "5";
-console.log(text.padStart(4, "0"));
+// let text = "5";
+// console.log(text.padStart(4, "0"));
+
+// STRING PADEND
+// let text = "5";
+// console.log(text.padEnd(4, "0"));
+
+// STRING MATCH
+// let text = "Javascript is awesome";
+// console.log(text.match(/a/g));
+
+// STRING SEARCH
+let text = "Hello Javascript";
+console.log(text.search("Javascript"));
