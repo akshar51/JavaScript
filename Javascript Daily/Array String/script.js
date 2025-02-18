@@ -140,3 +140,20 @@
 // ARRAY SORT
 // let fruit = ["Banana","Apple","Cherry"];
 // console.log(fruit.sort())
+
+// ARRAY REVERSE
+// let arr = [1,2,3,4,5]
+// console.log(arr.reverse());
+
+// ARRAY SPLICE
+// let arr = [1,2,3,4,5]
+// arr.splice(2,1);
+// console.log(arr)
+
+// ARRAY SLICE
+// let arr = [1,2,3,4,5];
+// console.log(arr.slice(1,4));
+
+// ARRAY INDEXOF
+let arr = [10,20,30,40];
+console.log(arr.indexOf(30));
