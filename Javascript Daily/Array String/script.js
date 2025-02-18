@@ -111,3 +111,32 @@
 // let arr = [1, 2, 3];
 // arr.shift();
 // console.log(arr);
+
+// UNSHIFT
+// let arr = [1, 2, 3];
+// arr.unshift(0);
+// console.log(arr);
+
+// ARRAY MAP
+// let num = [1,2,3]
+// let dbl = num.map(numb => numb * 2);
+// console.log(dbl)
+
+// ARRAY FILTER
+// let numbers = [1, 2, 3, 4, 5];
+// let evenNumbers = numbers.filter(num => num % 2 === 0);
+// console.log(evenNumbers);
+
+// ARRAY REDUCE
+// let num = [1,2,3,4];
+// let sum = num.reduce((acc,numb)=>acc + numb,0);
+// console.log(sum)
+
+// ARRAY FIND
+// let num = [1,2,3,4,5]
+// let result = num.find(num => num > 3);
+// console.log(result);
+
+// ARRAY SORT
+// let fruit = ["Banana","Apple","Cherry"];
+// console.log(fruit.sort())
