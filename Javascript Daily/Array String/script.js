@@ -40,3 +40,19 @@
 // STRING LOWER-CASE
 // let text = "HELLO";
 // console.log(text.toLowerCase());
+
+// STRING TRIM
+// let text ="   Hello World   ";
+// console.log(text.trim());
+
+// STRING REPLACE
+// let text = "Hello World";
+// console.log(text.replace("World","Javascript"));
+
+// STRING SLICE
+// let text = "Hello World"
+// console.log(text.slice(0,5));
+
+// STRING SUBSTRING
+// let text = "Hello World";
+// console.log(text.substring(0,5));
