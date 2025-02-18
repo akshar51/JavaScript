@@ -56,3 +56,11 @@
 // STRING SUBSTRING
 // let text = "Hello World";
 // console.log(text.substring(0,5));
+
+// STRING INCLUDE
+// let text = "Hello World";
+// console.log(text.includes("World"));
+
+// STRING SPLIT
+let text = "Hello,World,Javascript";
+console.log(text.split(","));
