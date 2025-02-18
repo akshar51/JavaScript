@@ -87,5 +87,27 @@
 // console.log(text.match(/a/g));
 
 // STRING SEARCH
-let text = "Hello Javascript";
-console.log(text.search("Javascript"));
+// let text = "Hello Javascript";
+// console.log(text.search("Javascript"));
+
+
+// ---------------------- ARRAY METHOD ----------------------//
+
+// ARRAY LENGTH
+// let arr = [1, 2, 3, 4, 5];
+// console.log(arr.length);
+
+// PUSH 
+// let arr = [1, 2, 3];
+// arr.push(4);
+// console.log(arr);
+
+// POP
+// let arr = [1, 2, 3];
+// arr.pop();
+// console.log(arr);
+
+// SHIFT
+// let arr = [1, 2, 3];
+// arr.shift();
+// console.log(arr);
