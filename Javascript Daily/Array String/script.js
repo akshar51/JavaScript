@@ -26,3 +26,17 @@
 // let arr1 = [10,2,30,4,35,25];
 // let array = arr1.slice(0,2);
 // console.log(array)
+
+// ----------------- STRING METHOD --------------//
+
+// STRING LENGTH
+// let text = "Hello World";
+// console.log(text.length)
+
+// STRING UPPER-CASE
+// let text = "hello";
+// console.log(text.toUpperCase())
+
+// STRING LOWER-CASE
+// let text = "HELLO";
+// console.log(text.toLowerCase());
