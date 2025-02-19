@@ -179,9 +179,14 @@
 // console.log(arr.join(" - "))
 
 // ARRAY INCLUDE
-let arr = [1,2,3,4,5]
-console.log(arr.includes(3));
+// let arr = [1,2,3,4,5]
+// console.log(arr.includes(3));
 
 // ARRAY FLAT
-let arr = [1,[2,3],[4,5]];
-console.log(arr.flat())
+// let arr = [1,[2,3],[4,5]];
+// console.log(arr.flat())
+
+// ARRAY COPYWITHIN
+let arr = [1,2,3,4,5];
+arr.copyWithin(1,3);
+console.log(arr);
