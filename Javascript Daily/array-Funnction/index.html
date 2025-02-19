@@ -30,5 +30,45 @@
     // let arr2 = arr.every(val=>val>=11)
     // console.log(arr2);
 
-    // 
+    
+
+
+    // --------------- ARRAY METHOD PROGRAM ----------------------- //
+
+    // SQUARE OF NUMBER
+    const num = [1,2,3,4,5];
+    const result = num.map(val => val * val);
+    console.log(result);
+
+    // CONVERT STRING TO UPPERCASE
+    const word = ["apple","cherry","banana"];
+    const upper =word.map(val => val.toUpperCase());
+    console.log(upper);
+
+    // EXTRACT NAMES FROM ARRAY OF OBJECT
+    const users = [
+        {name : "John"},
+        {name : "Jane"},
+        {name : "Rock"}
+    ]
+    const userName = users.map(val => val.name);
+    console.log(userName);
+
+    // ADDING NEW PROPERTY TO EACH OBJECT
+    const student = [
+        {name : "Alice", age : 20},
+        {name : "Blue", age : 22}
+    ]
+    const newStudent = student.map(val => ({...val,grade : "A"}));
+    console.log(newStudent);
+
+    // FILTER EVEN NUMBER
+    const even = [1,2,3,4,5,6,7];
+    const newEven = even.filter(val => val % 2 === 0);
+    console.log(newEven)
+
+    // FILTER STRING STARTING WITH 'A'
+    const words = ["Apple","Banana","Avacado","Grapes"];
+    const capital = words.filter(val => val.startsWith('A'));
+    console.log(capital);
 </script>
