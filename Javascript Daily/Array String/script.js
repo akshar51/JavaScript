@@ -192,5 +192,15 @@
 // console.log(arr);
 
 // ARRAY FINDINDEX
-let num = [10,20,30,40];
-console.log(num.findIndex(val => val === 30))
+// let num = [10,20,30,40];
+// console.log(num.findIndex(val => val === 30))
+
+// ARRAY ENTRIES
+// let arr = ['a','b','c'];
+// let iterator = arr.entries();
+// console.log(iterator.next().value)
+
+// ARRAY KEYS
+// let arr = ['a','b','c'];
+// let iterator = arr.keys();
+// console.log(iterator.next().value)
