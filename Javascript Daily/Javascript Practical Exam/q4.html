@@ -1,4 +1,7 @@
 <script>
+
+    // Q4. STUDENT GRADE CALCULATOR
+
     let marks = prompt("Enter your marks out of 100 : ");
     calculateGrade(marks);
     function calculateGrade(marks){
@@ -14,8 +17,11 @@
         else if(marks >= 60 && marks <=69){
             console.log(`Grade D`)
         }
+        else if(marks <= 59){
+            console.log(`Fail`);
+        }
         else{
-            console.log(`Fail`)
+            console.log(`Invalid marks...`)
         }
     }
 </script>
