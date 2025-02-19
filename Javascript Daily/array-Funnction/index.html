@@ -80,4 +80,51 @@
     ]
     const Adult = people.filter(val => val.age >= 18);
     console.log(Adult)
+
+    // PRINT EACH ELEMENT IN ARRAY
+    const fruit = ["Banana","Apple","Cherry","Grapes"];
+    fruit.forEach(val => console.log(val));
+
+    // CALCULATE SUM OF ARRAY
+    let sum = 0
+    const nums = [1,2,3,4];
+    nums.forEach(val => sum += val);
+    console.log(sum);
+
+    // FIND INDEX OF AN AELEMENT (indexOf())
+    const colors = ["Red","Green","Orange"];
+    console.log(colors.indexOf("Orange"))
+
+    // FIND INDEX OF FIRST EVEN NUMBER (findIndex())
+    const numbers = [1,3,7,8,10];
+    const evenNum = numbers.findIndex(val => val % 2 === 0);
+    console.log(evenNum);
+
+    // CHECK IF ELEMENT EXIST IN ARRAY
+    const name = ["Alex","Blue","Yash","Rahul"];
+    console.log(name.includes("Blue"))
+
+    // CHECK IF ALL NUMBER IS POSITIVE
+    const pos = [1,5,4,5,6,5];
+    const posNum = pos.every(val => val >= 0);
+    console.log(posNum);
+
+    // CHECK IF ANY NUMBER IS NEGATIVE
+    const negative = [1,5,-8,1,2];
+    const newNegative = negative.some(val => val < 0);
+    console.log(newNegative)
+
+    // TRANSFER ARRAY OF OBJECT USING MAP
+    const stud = [
+        { name : "Alex", marks : 20},
+        { name : "Ajay", marks : 77},
+        { name : "Raju", marks : 50}
+    ]
+    const pass = stud.map(val => ({...val , pass : val.marks >= 50}));
+    console.log(pass);
+
+    // FILTER UNIQUE VALUE USING filter() and indexOf()
+    const arr = [1,2,3,2,4,3,5]
+    const unique = arr.filter((val , ind ,self) => self.indexOf(val) === ind);
+    console.log(unique);
 </script>
