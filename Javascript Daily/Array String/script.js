@@ -187,6 +187,10 @@
 // console.log(arr.flat())
 
 // ARRAY COPYWITHIN
-let arr = [1,2,3,4,5];
-arr.copyWithin(1,3);
-console.log(arr);
+// let arr = [1,2,3,4,5];
+// arr.copyWithin(1,3);
+// console.log(arr);
+
+// ARRAY FINDINDEX
+let num = [10,20,30,40];
+console.log(num.findIndex(val => val === 30))
