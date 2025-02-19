@@ -155,5 +155,13 @@
 // console.log(arr.slice(1,4));
 
 // ARRAY INDEXOF
-let arr = [10,20,30,40];
-console.log(arr.indexOf(30));
+// let arr = [10,20,30,40];
+// console.log(arr.indexOf(30));
+
+// ARRAY LASTINDEXOF
+// let arr = [10, 20, 30, 10, 40];
+// console.log(arr.lastIndexOf(10));
+
+// ARRAY SOME
+let num = [1,2,3,4,5]
+console.log(num.some(val => val > 3));
