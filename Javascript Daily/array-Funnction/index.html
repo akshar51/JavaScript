@@ -71,4 +71,13 @@
     const words = ["Apple","Banana","Avacado","Grapes"];
     const capital = words.filter(val => val.startsWith('A'));
     console.log(capital);
+
+    // FILTER ADULT FROM LIST OF PEOPLE
+    const people = [
+        { name : "Alex", age : 20},
+        { name : "Yash", age : 15},
+        { name : "Yashraj", age : 25},
+    ]
+    const Adult = people.filter(val => val.age >= 18);
+    console.log(Adult)
 </script>
