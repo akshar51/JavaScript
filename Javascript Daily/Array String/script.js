@@ -171,8 +171,17 @@
 // console.log(num.every(val => val % 2 === 0));
 
 // ARRAY FILL
-let arr = new Array(5).fill(0);
-console.log(arr);
+// let arr = new Array(5).fill(0);
+// console.log(arr);
 
 // ARRAY JOIN
-let arr = ["Hello","World","Javascript"]
+// let arr = ["Hello","World","Javascript"]
+// console.log(arr.join(" - "))
+
+// ARRAY INCLUDE
+let arr = [1,2,3,4,5]
+console.log(arr.includes(3));
+
+// ARRAY FLAT
+let arr = [1,[2,3],[4,5]];
+console.log(arr.flat())
