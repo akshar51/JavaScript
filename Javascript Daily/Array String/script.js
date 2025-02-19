@@ -167,5 +167,12 @@
 // console.log(num.some(val => val > 3));
 
 // ARRAY EVERY
-let num = [2,4,6,8]
-console.log(num.every(val => val % 2 === 0));
+// let num = [2,4,6,8]
+// console.log(num.every(val => val % 2 === 0));
+
+// ARRAY FILL
+let arr = new Array(5).fill(0);
+console.log(arr);
+
+// ARRAY JOIN
+let arr = ["Hello","World","Javascript"]
