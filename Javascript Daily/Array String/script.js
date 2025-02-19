@@ -163,5 +163,9 @@
 // console.log(arr.lastIndexOf(10));
 
 // ARRAY SOME
-let num = [1,2,3,4,5]
-console.log(num.some(val => val > 3));
+// let num = [1,2,3,4,5]
+// console.log(num.some(val => val > 3));
+
+// ARRAY EVERY
+let num = [2,4,6,8]
+console.log(num.every(val => val % 2 === 0));
