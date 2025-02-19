@@ -127,4 +127,31 @@
     const arr = [1,2,3,2,4,3,5]
     const unique = arr.filter((val , ind ,self) => self.indexOf(val) === ind);
     console.log(unique);
+
+    // FIND FIRST OCCURENCE OF A SPECIFIC OBJECT USING findIndex()
+    const employ = [
+        { id : 1 , name : "Alex"},
+        { id : 2 , name : "Bob"}    
+    ];
+    const index = employ.findIndex(val => val.id === 2);
+    console.log(index);
+
+    // CHECK IF ALL OBJECT HAVE CERTAIN PROPERTY USING every()
+    const user = [
+        { name : "Alex" , active : true},
+        { name : "Bob" , active : true}
+    ]
+    console.log(user.every(val => val.active));
+
+    // CHECK IF AT LEAST ONE ELEMENT MATCHES CONDITION USING some()
+    const order = [
+        { orderId : 101 , status : "Shipped"},
+        { orderId : 102 , status : "Pending"},
+    ]
+    console.log(order.some(val => val.status==="Pending"))
+
+    // FIND DUPLICATE USING filter() and includes()
+    const num1 = [1, 2, 3, 2, 4, 5, 1] 
+    const dup = num1.filter((num , ind , self) => self.indexOf(num) !== ind);
+    console.log(dup);
 </script>
