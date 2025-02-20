@@ -218,7 +218,12 @@
 // let arr = ["loop","banana","cherry"];
 // arr.forEach(ele => console.log(ele));
 
-// MAP()
+// FILTER()
 let arr = [10,20,30,7,50];
 let even = arr.filter(num => num % 2 === 0)
 console.log(even);
+
+// MAP()
+let arr1 = [1,2,3,4];
+let mult = arr1.map(num => num * num);
+console.log(mult); 
