@@ -204,3 +204,14 @@
 // let arr = ['a','b','c'];
 // let iterator = arr.keys();
 // console.log(iterator.next().value)
+
+
+// ARRAY PRINT USING WHILE LOOP
+let arr = [1,2,3,4,5];
+let i= 0;
+while(i<arr.length){
+    console.log(arr[i]);
+    i++;
+}
+
+// FOR-EACH LOOP
