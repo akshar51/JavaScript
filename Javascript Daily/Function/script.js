@@ -88,3 +88,16 @@ let fib = ()=>{
     }
 }
 fib();
+
+
+let vowel = (str)=>{
+    let count1 = 0;
+    for(i=0;i<str.length;i++){
+        if(str[i]==='a'||str[i]==='e'||str[i]==='i'||str[i]==='o'||str[i]==='u'){
+            count1++;
+        }
+    }
+    return count1;
+}
+const newVowel = vowel("I am javascript u");
+console.log(newVowel);
