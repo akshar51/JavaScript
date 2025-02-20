@@ -207,11 +207,18 @@
 
 
 // ARRAY PRINT USING WHILE LOOP
-let arr = [1,2,3,4,5];
-let i= 0;
-while(i<arr.length){
-    console.log(arr[i]);
-    i++;
-}
+// let arr = [1,2,3,4,5];
+// let i= 0;
+// while(i<arr.length){
+//     console.log(arr[i]);
+//     i++;
+// }
 
 // FOR-EACH LOOP
+// let arr = ["loop","banana","cherry"];
+// arr.forEach(ele => console.log(ele));
+
+// MAP()
+let arr = [10,20,30,7,50];
+let even = arr.filter(num => num % 2 === 0)
+console.log(even);
