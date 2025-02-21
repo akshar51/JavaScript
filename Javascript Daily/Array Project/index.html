@@ -1,0 +1,38 @@
+<script>
+    
+// ----------------- ARRAY METHOD ------------------- //
+
+// 1) ARRAY LENGTH
+let arr = ["banana","1","Cherry"];
+console.log(arr.length);
+
+// 2) ARRAY POP
+let arr1 = [1,2,3,4,5,6]
+arr1.pop();
+console.log(arr1);
+
+// 3) ARRAY PUSH
+let pushArr = ["Apple","Banana","Cherry","Kiwi"];
+pushArr.push("Pineapple");
+console.log(pushArr);
+
+// 4) ARRAY MAP
+const mapArr = ["volvo","tata","bmw","audi"];
+const newMap = mapArr.map(str => str.toUpperCase());
+console.log(newMap);
+
+// 5) ARRAY FILTER
+const filterArr = [1,2,10,13,15,16];
+const newFilter = filterArr.filter(val => val % 2 === 0);
+console.log(newFilter);
+
+// 6) ARRAY SHIFT
+const shiftArr = [99,88,77,66,55];
+shiftArr.shift()
+console.log(shiftArr)
+
+// 7) ARRAY UNSHIFT
+const unshiftArr = [100,200,300,400,500];
+unshiftArr.unshift(1);
+console.log(unshiftArr);
+</script>
