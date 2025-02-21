@@ -145,12 +145,12 @@
 // let arr = [1,2,3,4,5]
 // console.log(arr.reverse());
 
-// ARRAY SPLICE
+// ARRAY SPLICE (DELETE ELEMENT splice(start,end))
 // let arr = [1,2,3,4,5]
 // arr.splice(2,1);
 // console.log(arr)
 
-// ARRAY SLICE
+// ARRAY SLICE (GIVE ELEMENT slice(start,end))
 // let arr = [1,2,3,4,5];
 // console.log(arr.slice(1,4));
 
