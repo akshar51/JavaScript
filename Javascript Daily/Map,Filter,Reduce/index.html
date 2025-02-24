@@ -1,0 +1,30 @@
+<script>
+    // MAP() METHOD PROGRAM
+
+    // 1) SQUARE NUMBER IN ARRAY
+    const num = [2,4,6,8];
+    const sq = num.map(val => val * val);
+    console.log(sq);
+
+    // 2) CONVERT ARRAY OF STRING TO UPPER-CASE
+    const word = ["hello", "world", "javascript"]
+    const upper = word.map(val => val.toUpperCase());
+    console.log(upper);
+
+    // 3) EXTRACT NAME FROM AN ARRAY OF OBJECT
+    const user = [
+        { name : "Alice"},
+        { name : "Bob"},
+        { name : "Charlie"}
+    ]
+    const objuser = user.map(val => val.name)
+    console.log(objuser)
+
+    // 4) ADD 10 TO EACH NUMBER
+    const addNum = [5,10,15,20];
+    const sum = addNum.map(val => val + 10)
+    console.log(sum);
+
+    // 5) CONVERT PRICE FROM USD TO INR ( 1 USD = 83 INR)
+    const priceUsd = [10,20,30]; 
+</script>
