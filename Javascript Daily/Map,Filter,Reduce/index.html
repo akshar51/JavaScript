@@ -27,4 +27,67 @@
 
     // 5) CONVERT PRICE FROM USD TO INR ( 1 USD = 83 INR)
     const priceUsd = [10,20,30]; 
+    const priceInr = priceUsd.map(val => val * 83);
+    console.log(priceInr)
+
+    // 6) CONVERT ARRAY OF NUMBER TO STRING
+    const numArr = [1,2,3,4,5];
+    const strArr = numArr.map(val => val.toString());
+    console.log(strArr)
+
+    // 7) CALCULATE AGE FROM BIRTH YEAR
+    const birth = [1990,1995,2000];
+    const age = birth.map(val => new Date().getFullYear() - val);
+    console.log(age)
+
+
+    // ------------------- FILTER - METHOD -----------------------//
+
+    // 8) FILTER EVEN NUMBER
+    const number = [1,2,3,4,5,6];
+    const evenNum = number.filter(val => val % 2 === 0);
+    console.log(evenNum)
+
+    // 9) FILTER NAME STARTING WITH 'A'
+    const names = ["Alice", "Bob", "Amanda", "Charlie"];
+    const capitalA = names.filter(val => val.startsWith("A"));
+    console.log(capitalA);
+
+    // 10) FILTER NUMBER GREATER THAN 10
+    const num1 = [5, 10, 15, 20, 25];
+    const newGreater = num1.filter(val => val > 10);
+    console.log(newGreater);
+
+    // 11) FILTER OBJECT WHERE AGE > 18
+    const people = [
+        {name: "John", age: 17}, 
+        {name: "Jane", age: 20}, 
+        {name: "Tom", age: 25}
+    ];
+    const age18 = people.filter(val => val.age > 18);
+    console.log(age18);
+
+    // 12) FILTER WORDS WITH MORE THAN 5 LETTER
+    const word1 = ["apple", "banana", "cherry", "fig"];
+    const wordLength = word1.filter(val => val.length > 5);
+    console.log(wordLength);
+
+    // 13) FILTER TRUTHY VALUE FROM ARRAY 
+    const value = [0,1,false,"hello","",undefined,"world"];
+    const truthyValue = value.filter(Boolean);
+    console.log(truthyValue);
+
+    // 14) FILTER PRIME NUMBER
+    const number1 = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const isPrime = (num) => {
+        for(let i=2;i < num ;i++){
+            if(num % i === 0){
+                return false;
+            }
+        }
+        return num > 1;
+    }
+    const prime = number1.filter(isPrime);
+    console.log(prime);
+
 </script>
