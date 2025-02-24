@@ -90,4 +90,27 @@
     const prime = number1.filter(isPrime);
     console.log(prime);
 
+    
+    // ----------------- REDUCE - METHOD ------------------//
+
+    // 15) FIND SUM OF AN ARRAY 
+    const nums = [1, 2, 3, 4, 5];
+    const reduceSum = nums.reduce((acc,val) => ( acc + val),0);
+    console.log(reduceSum);
+
+    // 16) FIND MAXIMUM NUMBER IN ARRAY
+    const numbers1 = [100, 50, 30, 70, 20];
+    const maxValue = numbers1.reduce((acc,val) => val > acc ? val : acc,numbers1[0])
+    console.log(maxValue);
+
+    // 17) COUNT OCCURRENCE OF ELEMENT IN AN ARRAY
+
+
+
+    // 18) FLATTEN A NESTED ARRAY
+    const nestedArr = [[1,2],[3,4],[5,6]];
+    const flatArr = nestedArr.reduce((acc,val) => )
+
+
+
 </script>
