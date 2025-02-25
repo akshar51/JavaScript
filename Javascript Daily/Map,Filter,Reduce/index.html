@@ -107,7 +107,8 @@
     let str =""
     const word2 = ["apple", "banana", "apple", "cherry", "banana", "apple"];
     const count1 = word2.reduce((acc,val) => {
-        
+        acc[val]=(acc[val]||0) + 1
+        return acc;
     },{})
     console.log(count1);
 
