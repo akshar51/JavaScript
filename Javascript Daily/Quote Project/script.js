@@ -45,14 +45,15 @@ const dataQuote = [
   ]
   
   const changeQuote = () => {
-    let index = Math.floor(Math.random() * dataQuote.length) 
-    para.textContent = dataQuote[index].quote
-    authorName.textContent = dataQuote[index].author
+    let index = Math.floor(Math.random() * dataQuote.length); 
+    para.textContent = dataQuote[index].quote;
+    authorName.textContent = dataQuote[index].author;
+    para.style.color = "orange";
   }
 
-  changeQuote();
-  setInterval(()=>{
-    changeQuote();
-  },3000)
+//   changeQuote();
+//   setInterval(()=>{
+//     changeQuote();
+//   },3000)
 
   
