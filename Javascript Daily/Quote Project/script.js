@@ -49,7 +49,7 @@ const dataQuote = [
     para.textContent = dataQuote[index].quote;
     authorName.textContent = dataQuote[index].author;
     para.style.color = "orange";
-    para.style.fontWeight="bold"
+    para.style.fontStyle="italic"
   }
   
 
