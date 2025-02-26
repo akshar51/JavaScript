@@ -112,11 +112,19 @@
     },{})
     console.log(count1);
 
-
     // 18) FLATTEN A NESTED ARRAY
     const nestedArr = [[1,2],[3,4],[5,6]];
     const flatArr = nestedArr.reduce((acc,val) => acc.concat(val),[]);
     console.log(flatArr);
     
+    // 19) CALCULATE TOTAL PRICE FROM CART
+    const cart = [
+        { price: 100, qty: 2 }, 
+        { price: 50, qty: 4 }, 
+        { price: 200, qty: 1 }
+    ]
+    const price = cart.reduce((acc,val)=> acc + val.price * val.qty,0);
+    console.log(price)
 
+    // 20) GROUP ITEM BY 
 </script>
