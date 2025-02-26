@@ -126,5 +126,16 @@
     const price = cart.reduce((acc,val)=> acc + val.price * val.qty,0);
     console.log(price)
 
-    // 20) GROUP ITEM BY 
+    // 20) GROUP ITEM BY CATEGORY
+    const product =[ 
+        { name: "Laptop", category: "Electronics" },
+        { name: "Shirt", category: "Clothing" },
+        { name: "Phone", category: "Electronics" },
+        { name: "Jeans", category: "Clothing" }
+    ]
+    const category = product.reduce((acc,val)=>{
+        (acc[val.category] = acc[val.category] || []).push(val.name)
+        return acc
+    },{})
+    console.log(category);
 </script>
