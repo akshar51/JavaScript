@@ -23,6 +23,7 @@
             text-align: center;
             font-weight: 500;
         }
+        
 
     </style>
 </head>
@@ -30,6 +31,10 @@
     <div class="head">
         <h1>TIMER</h1>
         <div id="timer"></div>
+        <div class="quiz-cont">
+            <div class="questionDiv"></div>
+            <ul id="option"></ul>
+        </div>
     </div>
 
 
@@ -80,12 +85,25 @@
             }
             else{
                 clearInterval(timeInterval);
-                startTimer()
             }
         },1000)
     }
-    startTimer();
+    
 
+    const questions = [
+            { question: "What is JavaScript primarily used for?", options: ["Styling web pages", "Server-side scripting", "Client-side scripting", "Database management"], answer: "Client-side scripting" },
+            { question: "Which keyword is used to declare a variable in JavaScript?", options: ["int", "var", "string", "declare"], answer: "var" },
+            { question: "What does 'DOM' stand for?", options: ["Document Object Model", "Data Object Manipulation", "Dynamic Output Method", "Document Oriented Mapping"], answer: "Document Object Model" }
+        ];
+
+        let quesStart = 0
+        function loadQues(){
+            startTimer()
+            let quesBox = document.querySelector(".questionDiv")
+         
+
+        }
+        loadQues()
 
     </script>
 </body>
