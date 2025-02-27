@@ -17,6 +17,10 @@ body{
     position: relative;
 }
 
+.slider-item img{
+    object-fit: contain;
+}
+
 
 .d-none{
     display: none;
@@ -32,7 +36,6 @@ body{
     padding: 24px;
     position: absolute;
     top: 50%;
-    transform: translate(50%,-50%);
 }
 
 .next{
@@ -41,4 +44,5 @@ body{
 }
 .prev{
     left: 0;
+    transform: translate(-50%,-50%);
 }
