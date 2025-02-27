@@ -18,7 +18,7 @@
             text-align: center;
         }
         #timer{
-            border: 1px solid #000;
+           
             font-size: 30px;
             text-align: center;
             font-weight: 500;
@@ -29,7 +29,7 @@
 <body>
     <div class="head">
         <h1>TIMER</h1>
-        <div id="timer">hello</div>
+        <div id="timer"></div>
     </div>
 
 
@@ -66,6 +66,27 @@
     // console.log(Array.isArray([]))
     // console.log(typeof(NaN))
     // console.log(typeof [])
+
+
+    let timeleft;
+    let timeInterval
+    function startTimer(){
+        timeleft = 10
+        clearInterval(timeInterval)
+        timeInterval = setInterval(()=>{
+            if(timeleft > 0){
+                timeleft--;
+                document.getElementById("timer").innerHTML = `Time left is : ${timeleft}`
+            }
+            else{
+                clearInterval(timeInterval);
+                startTimer()
+            }
+        },1000)
+    }
+    startTimer();
+
+
     </script>
 </body>
 </html>
