@@ -9,17 +9,17 @@
 <body>
 
     <div class="slider">
-        <div class="slider-item d-none active">
+        <div class="slider-item d-none active fade">
             <img src="./image/image-1.webp" alt="">
         </div>
-        <div class="slider-item d-none">
+        <div class="slider-item d-none fade">
             <img src="./image/img-2.webp" alt="">
         </div>
-        <div class="slider-item d-none">
+        <div class="slider-item d-none fade">
             <img src="./image/img-3.webp" alt="">
         </div>
-        <button class="prev">Prev</button>
-        <button class="next">Next</button>
+        <button class="prev" onclick="currSlide(-1)">Prev</button>
+        <button class="next" onclick="currSlide(1)">Next</button>
     </div>
     <script src="./js/script.js"></script>
 </body>
