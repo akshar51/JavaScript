@@ -11,14 +11,14 @@ let displaySlide = (n)=>{
     if(n >= sliderItem.length){
         slideIndex = 0
     }
+    
     if(n < 0){
         slideIndex =  sliderItem.length - 1;
     }
-    console.log(slideIndex)
+
     for(let i=0;i<sliderItem.length;i++){
         sliderItem[i].classList.remove("active")
     }
-
     sliderItem[slideIndex].classList.add("active")
 }
 
