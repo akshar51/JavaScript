@@ -1,3 +1,18 @@
 <script>
-    
+    // 1) BASIC TRY AND CATCH
+    try{
+        throw "An error occured";
+    }catch(error){
+        console.log(error)
+    }
+
+    // 2) HANDLING MULTIPLE EXCEPTION
+    try {
+        let num = parseInt("ABC");
+        if(isNaN(num)){
+            throw new Error("Invalid number format")
+        }
+    } catch (error) {
+        console.log("Error",error.message)
+    }
 </script>
