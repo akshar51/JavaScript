@@ -31,15 +31,20 @@
         let email = document.getElementById("email")
         let password = document.getElementById("password");
         let form = document.getElementById("form");
+        email.focus();
 
-        form.addEventListener("submit",()=>{
+        form.addEventListener("submit",(error)=>{
+            error.preventDefault()
             try {
                 if(email.value != "admin@gmail.com" || password.value != "admin123" ){
                     throw new Error("Invalid email & password...")
                 }
                 alert("Valid email and password");
+                email.value = "";
+                password.value = "";
             } catch (error) {
-                
+                alert(error)
+                email.focus();
             }
         })
 
