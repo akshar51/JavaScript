@@ -63,4 +63,38 @@
         console.log("Caught Type-error:",error.message)        
     }
     
+    // 8) NESTED TRY-CATCH
+    try{
+        try{
+            throw new Error("Inner error")
+        } catch (innererror){
+            console.log("Inner catch:",innererror.message)
+            throw new Error ("Outer error")
+        }
+    } catch(outererror){
+        console.log("Outer catch:",outererror.message)
+    }
+
+    // 9) CUSTOM ERROR CLASS
+    class CustomError extends Error{
+        constructor(message){
+            super(message);
+            this.name = "CustomError"
+        }
+    }
+
+    try {
+        throw new CustomError("This is a custom error")
+    } catch (error) {
+        console.log(`${error.name}: ${error.message}`)
+    }
+
+    // 10) USING TRY-CATCH WITH JSON PARSING
+    try{
+        let data = JSON.parse("{invalidJson}")
+    }catch(error){
+        console.log("Invalid JSON format :",error.message)
+    }
+
+    
 </script>
