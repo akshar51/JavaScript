@@ -25,5 +25,42 @@
         console.log("Finally block executed")
     }
 
-    // 4) 
+    // 4) DIVISION BY ZERO EXCEPTION
+    function divide(a,b){
+        if(b===0){
+            throw new Error("Division by zero is not allowed");
+        }
+        return a/b;
+    }
+    try {
+        console.log(divide(10,0))
+    } catch (error) {
+        console.log("Exception :",error.message)
+    }
+
+    // 5) TRY-CATCH INSIDE A FUNCTION
+    function riskyFunction(){
+        try {
+            throw new Error("Something went wrong")
+        } catch (error) {
+            console.log("Caught error in function :",error.message)
+        }
+    }
+    riskyFunction();
+
+    // 6) HANDLING UNDEFINED VARIABLE
+    try {
+        console.log(undefinedVariable)
+    } catch (error) {
+        console.log("Caught an error:",error.message)
+    }
+
+    // 7) CATCHING TYPE-ERROR
+    try {
+        let obj = null;
+        console.log(obj.name)
+    } catch (error) {
+        console.log("Caught Type-error:",error.message)        
+    }
+    
 </script>
