@@ -1,0 +1,5 @@
+let username = document.getElementById("username")
+let email = document.getElementById("email")
+let password = document.getElementById("password")
+let gender = document.querySelectorAll("input[name='gender']")
+let hobby = document.querySelectorAll("input=hobby['hobby']")
