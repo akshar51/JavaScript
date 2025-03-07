@@ -4,13 +4,16 @@ let array = ['+','-','*','/'];
 
 btn.forEach((button)=>{
     button.addEventListener("click",(e)=>{
+
         let value = e.target.innerHTML
-        let lastStr = display.value.slice(0,)
-        
+        let displayValue = display.value
+
+        let last = displayValue.slice(-1)//
+        let removeStr = display.value.slice(0,-1)// Remove last char from display value
 
         if(value == '='){
-            if(array.includes(value)){
-               display.value = lastStr
+            if(array.includes(last)){
+                display.value = removeStr
             }
             else{
                 display.value = eval(display.value)
@@ -19,8 +22,22 @@ btn.forEach((button)=>{
         else if(value == 'C'){
             display.value = ""
         }
+        else if(array.includes(value)){
+            if(last == value){
+                display.value = display.value
+            }
+            else{
+                if(array.includes(last)){
+                    display.value = removeStr + value;
+                }
+                else{
+                    display.value += value;
+                }
+            }
+        }
         else{
             display.value += value;
         }
+        
     })
 })
