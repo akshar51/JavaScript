@@ -5,11 +5,12 @@ let array = ['+','-','*','/'];
 btn.forEach((button)=>{
     button.addEventListener("click",(e)=>{
         let value = e.target.innerHTML
-        let lastStr = display.value.slice(0,-1)
-        console.log(lastStr)
+        let lastStr = display.value.slice(0,)
+        
+
         if(value == '='){
-            if(array.includes()){
-                display.value = value
+            if(array.includes(value)){
+               display.value = lastStr
             }
             else{
                 display.value = eval(display.value)
