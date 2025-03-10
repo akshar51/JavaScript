@@ -27,38 +27,72 @@
 
 
 //------- EXAMPLE-2 ---------//
-    class Animal {
-        speak() {
-            console.log("Animal makes a sound");
-        }
-        eat(){
-            console.log("Animal eat...")
-        }
+//     class Animal {
+//         speak() {
+//             console.log("Animal makes a sound");
+//         }
+//         eat(){
+//             console.log("Animal eat...")
+//         }
+//     }
+
+//     class Dog extends Animal {
+//         speak() {
+//             console.log("Dog barks");
+//         }
+//     }
+
+//     class Cat extends Animal {
+//         speak() {
+//             console.log("Cat meows");
+//         }
+//     }
+
+// let obj = new Animal()
+// obj.speak()
+
+
+// let obj1 = new Dog()
+// obj1.speak()
+// obj1.eat()
+
+// let obj2 = new Cat()
+// obj2.speak()
+
+// let ani = [new Animal(),new Dog(),new Cat()]
+// ani.forEach((e)=>e.speak())
+
+//------------------ EXAMPLE-3 -------------//
+
+class TV{
+    remote(){
+        console.log("TV remote")
     }
+}
 
-    class Dog extends Animal {
-        speak() {
-            console.log("Dog barks");
-        }
+class AC extends TV{
+    remote(){
+        console.log("AC remote")
     }
+}
 
-    class Cat extends Animal {
-        speak() {
-            console.log("Cat meows");
-        }
+class Fan extends AC{
+    remote(){
+        console.log("Fan remote")
     }
+}
 
-let obj = new Animal()
-obj.speak()
+// let obje = [new TV(),new AC(),new Fan()]
+// obje.forEach((e)=>e.remote())
+
+let obj1 = new TV();
+obj1.remote();
+
+let obj2 = new AC();
+obj2.remote();
+
+let obj3 = new Fan();
+obj3.remote();
 
 
-let obj1 = new Dog()
-obj1.speak()
-obj1.eat()
-
-let obj2 = new Cat()
-obj2.speak()
-
-let ani = [new Animal(),new Dog(),new Cat()]
-ani.forEach((e)=>e.speak())
 </script>
