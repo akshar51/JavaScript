@@ -50,3 +50,7 @@ const dataQuote = [
     para.textContent = dataQuote[randomQuote].quote
     names.textContent = dataQuote[randomQuote].author
  }
+
+ setInterval(()=>{
+    changeQuote()
+ },2000)
