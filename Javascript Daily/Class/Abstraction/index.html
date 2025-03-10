@@ -1,0 +1,31 @@
+<script>
+
+    // ---- EXAMPLE-1 ----//
+    class Vehicle{
+        wheel(){
+            console.log("Engine...")
+        }
+    }
+
+    class Bike extends Vehicle{
+        wheel(){
+            console.log("Piston Engine...")
+        }
+    }
+
+    class Car extends Vehicle{
+        wheel(){
+            console.log("V8 Engine...")
+        }
+    }
+
+    let obj = new Vehicle();
+    obj.wheel();
+
+    let obj1 = new Bike();
+    obj1.wheel();
+
+    let obj2 = new Car();
+    obj2.wheel();
+    
+</script>
