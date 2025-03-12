@@ -1,0 +1,27 @@
+<script>
+    class Student{
+        constructor(){
+            let name;
+            let age;
+            let grade;
+            let course;
+        }
+
+        set(name,age,grade,course){
+            this.name = name;
+            this.age = age;
+            this.grade = grade;
+            this.course = course;
+        }
+
+        get(){
+            console.log(`${this.name}`)
+            console.log(`${this.age}`)
+            console.log(`${this.grade}`)
+            console.log(`${this.course}`)
+        }
+    }
+
+    let obj = new Student("Akshar",24,"A","Full stack")
+    obj.get();
+</script>
