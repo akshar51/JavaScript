@@ -1,27 +1,39 @@
 <script>
     class Student{
-        constructor(){
-            let name;
-            let age;
-            let grade;
-            let course;
-        }
-
-        set(name,age,grade,course){
+        constructor(name,age,grade,course){
             this.name = name;
             this.age = age;
             this.grade = grade;
             this.course = course;
         }
 
+        set(){
+            this.name = "Ram";
+            this.age = 18;
+            this.grade = "B";
+            this.course = "UI/UX";
+        }
+
         get(){
-            console.log(`${this.name}`)
-            console.log(`${this.age}`)
-            console.log(`${this.grade}`)
-            console.log(`${this.course}`)
+            console.log(`Name : ${this.name}`)
+            console.log(`Age : ${this.age}`)
+            console.log(`Grade : ${this.grade}`)
+            console.log(`Course : ${this.course}`)
+            console.log(`\n`)
         }
     }
 
-    let obj = new Student("Akshar",24,"A","Full stack")
-    obj.get();
+    let obj = new Student("Akshar",24,"B","Full stack")
+    let obj1 = new Student("Nyan",28,"A","UI/UX Design")
+    let obj2 = new Student("Piku",34,"C","Full stack")
+    let ob = new Student()
+
+    obj.get()
+    obj1.get()
+    obj2.get()
+
+    ob.set()
+    ob.get()
+
+
 </script>
