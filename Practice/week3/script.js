@@ -55,41 +55,50 @@
 //     changeQuote()
 //  },2000)
 
-//-------------------------------- LOGIN-SUMBIT --------------------------//
+// ----------------------CALCULATOR ---------------------//
 
-let form1 = document.getElementById("form1")
-let card = document.getElementById("card")
-let form = document.getElementById("form")
+let btn = document.querySelectorAll("button")
+let display = document.querySelector("#display")
+let array = ['+','-','*','/'];
 
-form1.style.display = "none"
-card.style.display = "none"
+btn.forEach((button)=>{
+    button.addEventListener("click",(e)=>{
 
-let u_email;
-let u_pass;
+        let value = e.target.innerHTML
+        let displayValue = display.value
 
-form.addEventListener("submit",(e)=>{
-    e.preventDefault()
-    let e_data = document.getElementById("email").value
-    let p_data = document.getElementById("password").value
-    form.style.display = "none"
-    form1.style.display = "block"
-    u_email=e_data;
-    u_pass=p_data;
+        let last = displayValue.slice(-1)//
+        let removeStr = display.value.slice(0,-1)// Remove last char from display value
+
+        if(value == '='){
+            if(array.includes(last)){
+                display.value = removeStr
+            }
+            else{
+                display.value = eval(display.value)
+            }
+        }
+        else if(value == 'C'){
+            display.value = ""
+        }
+        else if(array.includes(value)){
+            if(last == value){
+                display.value = display.value
+            }
+            else{
+                if(array.includes(last)){
+                    display.value = removeStr + value;
+                }
+                else{
+                    display.value += value;
+                }
+            }
+        }
+        else{
+            display.value += value;
+        }
+        
+    })
 })
-
-form1.addEventListener("submit",(e)=>{
-    e.preventDefault()
-    let email1 = document.getElementById("email1").value
-    let pass1 = document.getElementById("password1").value
-
-    if(u_email === email1 && u_pass === pass1){
-        form1.style.display = "none"
-        card.style.display = "block"
-    }
-    else{
-        alert("Invalid detail")
-    }
-})
-
 
 
