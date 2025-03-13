@@ -1,6 +1,7 @@
 <script>
 
-    class A{
+
+class A{
     constructor(str){
         this.e_name = str;
     }
@@ -11,8 +12,8 @@
 }
 
 class B extends A{
-    constructor(){
-        super()
+    constructor(str){
+        super(str)
         this.s_name = "Ramu"
     }
 
@@ -21,7 +22,8 @@ class B extends A{
     }
 }
 
-let obj = new A("hELLO a");
+let obj = new B("Hello A");
 obj.displayA()
+obj.displayB()
 
 </script>
