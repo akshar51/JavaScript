@@ -1,0 +1,27 @@
+<script>
+
+    class A{
+    constructor(str){
+        this.e_name = str;
+    }
+
+    displayA(){
+        console.log(this.e_name)
+    }
+}
+
+class B extends A{
+    constructor(){
+        super()
+        this.s_name = "Ramu"
+    }
+
+    displayB(){
+        console.log(this.s_name)
+    }
+}
+
+let obj = new A("hELLO a");
+obj.displayA()
+
+</script>
