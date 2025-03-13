@@ -45,3 +45,35 @@ h1 { color: white; }
 
 /* -------------------- FORM VALIDATION ------------------- */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
+form{
+    margin-top: 50px;
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 14px;
+}
+.btn{
+    width: 100%;
+    font-weight: bold;
+    border: 0;
+}
+
+.btn:hover{
+    background-color: rgb(98, 222, 98);
+}
+
+.form-check-input:hover {
+    transform: scale(1.1);
+}
+
+.form-label{
+    font-weight: bold;
+}
