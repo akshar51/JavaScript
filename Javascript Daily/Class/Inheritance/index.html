@@ -1,29 +1,56 @@
 <script>
 
 
-class A{
-    constructor(str){
-        this.e_name = str;
-    }
+// class A{
+//     constructor(str){
+//         this.e_name = str;
+//     }
 
-    displayA(){
-        console.log(this.e_name)
+//     displayA(){
+//         console.log(this.e_name)
+//     }
+// }
+
+// class B extends A{
+//     constructor(str){
+//         super(str)
+//         this.s_name = "Ramu"
+//     }
+
+//     displayB(){
+//         console.log(this.s_name);
+//     }
+// }
+
+// let obj = new B("Hello A");
+// obj.displayA();
+// obj.displayB();
+
+//---------------Example-1 -------------------//
+// class Employee{
+//     constructor(name,salary){
+//         console.log(this.name = name)
+//         console.log(this.salary = salary)
+//     }
+// }
+
+// let obj = new Employee("Ram",25000);
+
+//------------Example-2-------------------//
+class Employee{
+    constructor(name,age,salary){
+        console.log(this.name = name);
+        console.log(this.age = age);
+        console.log(this.salary = salary);
     }
 }
 
-class B extends A{
-    constructor(str){
-        super(str)
-        this.s_name = "Ramu"
-    }
-
-    displayB(){
-        console.log(this.s_name);
+class Manager extends Employee{
+    constructor(name,age,salary){
+        super(name,age,salary)
     }
 }
 
-let obj = new B("Hello A");
-obj.displayA();
-obj.displayB();
+let obj = new Manager("Tony",18,25000);
 
 </script>
