@@ -26,6 +26,7 @@
 // obj.displayA();
 // obj.displayB();
 
+
 //---------------Example-1 -------------------//
 // class Employee{
 //     constructor(name,salary){
@@ -37,20 +38,41 @@
 // let obj = new Employee("Ram",25000);
 
 //------------Example-2-------------------//
-class Employee{
-    constructor(name,age,salary){
-        console.log(this.name = name);
-        console.log(this.age = age);
-        console.log(this.salary = salary);
+// class Employee{
+//     constructor(name,age,salary){
+//         console.log(this.name = name);
+//         console.log(this.age = age);
+//         console.log(this.salary = salary);
+//     }
+// }
+
+// class Manager extends Employee{
+//     constructor(name,age,salary){
+//         super(name,age,salary)
+//     }
+// }
+
+// let obj = new Manager("Tony",18,25000);
+
+
+//------------------- Example-3 ----------------//
+class A{
+    constructor(name){
+        this.name = name;
+        console.log("Class A : ",this.name);
     }
 }
 
-class Manager extends Employee{
-    constructor(name,age,salary){
-        super(name,age,salary)
+class B extends A{
+    constructor(name){
+        super()
+        this.s_name = name;
+        console.log("Class B : ",this.s_name)
     }
+
 }
 
-let obj = new Manager("Tony",18,25000);
+let obj = new A("ramu");
+let obj1 = new B("ramu");
 
 </script>
