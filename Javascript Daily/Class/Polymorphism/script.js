@@ -1,4 +1,4 @@
-<script>
+
 
 // --- EXAMPLE -1 ----//
     // class Vehicle{
@@ -93,5 +93,31 @@
 // let obj3 = new Fan();
 // obj3.remote();
 
+//------------- Example-4 ----------------//
+class Animal {
+    speak() {
+      console.log("Animal makes a sound");
+    }
+  }
+  
+  class Dog extends Animal {
+    speak() {
+      console.log("Dog barks");
+    }
+  }
+  
+  class Cat extends Animal {
+    speak() {
+      console.log("Cat meows");
+    }
+  }
+  
+//   let animals = [new Dog(), new Cat()];
+//   animals.forEach(animal => animal.speak());
+let obj = new Cat();
+let obj1 = new Animal();
 
-</script>
+obj.speak()
+obj1.speak()
+ 
+  
