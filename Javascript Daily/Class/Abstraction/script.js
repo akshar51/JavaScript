@@ -31,8 +31,8 @@
 class Employee{
     constructor(){
         this.e_name = "";
-        this.salary = "";
-        this.age = "";
+        this.salary = 0;
+        this.age = 0;
     }
 
     setempInfo(name,salary,age){
@@ -47,20 +47,15 @@ class Employee{
 }
 
 class Salary extends Employee{
-    constructor(){
-        super()
-        this.grossSalary = "";
-        this.netSalary = "";
-    }
-
-    setInfo(name,salary,age,hra,ma,pf){
+    constructor(name,salary,age,hra,ma,pf){
+        super();
         this.setempInfo(name,salary,age)
-        this.grossSalary = hra + ma - pf
-        this.netSalary = this.grossSalary + this.salary
+        this.grossSalary = this.salary + hra + ma
+        this.netSalary = this.grossSalary - pf
     }
 
     getInfo(){
-        super.getempInfo();
+        this.getempInfo();
         console.log(`Employee grossSalary is ${this.grossSalary} and netSalary is ${this.netSalary}`);
     }
 }
