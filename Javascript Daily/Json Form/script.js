@@ -53,8 +53,11 @@ let deleteData = (idx)=>{
 }
 
 let editData = (idx)=>{
-    username.value = dataStore[idx].username;
-    password.value = dataStore[idx].password;
+    let newUser = dataStore.filter((_,index)=>idx==index)[0];
+    username.value = newUser.username;
+    password.value = newUser.password;
+    // username.value = dataStore[idx].username;
+    // password.value = dataStore[idx].password;
     editIdx = idx;
     updateBtn.innerText = "Update";
     updateBtn.classList.remove("btn-success")
