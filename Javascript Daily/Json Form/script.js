@@ -2,7 +2,7 @@ let username = document.getElementById("username");
 let password = document.getElementById("password");
 let form = document.getElementById("form");
 let tableRow = document.querySelector("#table tbody");
-let updateBtn = document.getElementById("updateBtn")
+let updateBtn = document.getElementById("updateBtn");
 let dataStore = [];
 let editIdx = -1;
 username.focus();
@@ -38,6 +38,9 @@ function displayData(){
         `<td>${idx+1}</td>
          <td>${data.username}</td>
          <td>${data.password}</td>
+         <td></td>
+         <td></td>
+         <td></td>
          <td><button class="btn btn-warning px-3 me-2"  onclick="editData(${idx})">Edit</button>
              <button class="btn btn-danger" onclick="deleteData(${idx})">Delete</button>
          </td>
