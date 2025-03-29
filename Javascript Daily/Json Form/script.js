@@ -6,6 +6,7 @@ let updateBtn = document.getElementById("updateBtn");
 let gender = document.querySelectorAll("input[name='gender']");
 let hobby = document.querySelectorAll("input[name = 'hobby']");
 let dataStore = [];
+let str = [];
 let editIdx = -1;
 username.focus();
 
@@ -14,14 +15,25 @@ form.addEventListener("submit",(event)=>{
     if(gender[0].checked){
        gender.value = gender[0].value;
     }
-    else{
-        gender.value = gender[1].value
+    else if(gender[1].checked){
+        gender.value = gender[1].value;
     }
+    else{
+        gender.value = "";
+    }
+
+    str=[];
+    hobby.forEach((val)=>{
+        if(val.checked){
+          str.push(val.value);
+        }
+    })
 
     let obj ={
         username : username.value,
         password : password.value,
-        gender : gender.value
+        gender : gender.value,
+        hobby : str.toString()
     }
 
     if(editIdx == -1){
@@ -38,6 +50,7 @@ form.addEventListener("submit",(event)=>{
     username.value = "";
     password.value = "";
     gender.value = "";
+    hobby.value = "";
     username.focus();
     displayData();
     
@@ -52,7 +65,7 @@ function displayData(){
          <td>${data.username}</td>
          <td>${data.password}</td>
          <td>${data.gender}</td>
-         <td></td>
+         <td>${data.hobby}</td>
          <td></td>
          <td><button class="btn btn-warning px-3 me-2"  onclick="editData(${idx})">Edit</button>
              <button class="btn btn-danger" onclick="deleteData(${idx})">Delete</button>
@@ -73,6 +86,7 @@ let editData = (idx)=>{
     username.value = newUser.username;
     password.value = newUser.password;
     gender.value = newUser.gender;
+    hobby.value = newUser.hobby;
     // username.value = dataStore[idx].username;
     // password.value = dataStore[idx].password;
     editIdx = idx;
