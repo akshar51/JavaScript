@@ -3,16 +3,27 @@ let password = document.getElementById("password");
 let form = document.getElementById("form");
 let tableRow = document.querySelector("#table tbody");
 let updateBtn = document.getElementById("updateBtn");
+let gender = document.querySelectorAll("input[name='gender']");
+let hobby = document.querySelectorAll("input[name = 'hobby']");
 let dataStore = [];
 let editIdx = -1;
 username.focus();
 
 form.addEventListener("submit",(event)=>{
     event.preventDefault();
+    if(gender[0].checked){
+       gender.value = gender[0].value;
+    }
+    else{
+        gender.value = gender[1].value
+    }
+
     let obj ={
         username : username.value,
-        password : password.value
+        password : password.value,
+        gender : gender.value
     }
+
     if(editIdx == -1){
         dataStore.push(obj);
     }
@@ -26,8 +37,10 @@ form.addEventListener("submit",(event)=>{
     }
     username.value = "";
     password.value = "";
+    gender.value = "";
     username.focus();
     displayData();
+    
 })
 
 function displayData(){
@@ -38,7 +51,7 @@ function displayData(){
         `<td>${idx+1}</td>
          <td>${data.username}</td>
          <td>${data.password}</td>
-         <td></td>
+         <td>${data.gender}</td>
          <td></td>
          <td></td>
          <td><button class="btn btn-warning px-3 me-2"  onclick="editData(${idx})">Edit</button>
@@ -59,6 +72,7 @@ let editData = (idx)=>{
     let newUser = dataStore.filter((_,index)=>idx==index)[0];
     username.value = newUser.username;
     password.value = newUser.password;
+    gender.value = newUser.gender;
     // username.value = dataStore[idx].username;
     // password.value = dataStore[idx].password;
     editIdx = idx;
