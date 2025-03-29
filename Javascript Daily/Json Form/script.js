@@ -11,15 +11,13 @@ let editIdx = -1;
 username.focus();
 
 form.addEventListener("submit",(event)=>{
-    event.preventDefault();
+    event.preventDefault(); 
+    
     if(gender[0].checked){
        gender.value = gender[0].value;
     }
-    else if(gender[1].checked){
-        gender.value = gender[1].value;
-    }
     else{
-        gender.value = "";
+        gender.value = gender[1].value;
     }
 
     str=[];
@@ -45,15 +43,12 @@ form.addEventListener("submit",(event)=>{
         updateBtn.innerText = "Register";
         updateBtn.classList.add("btn-success")
         updateBtn.classList.remove("btn-primary")
-
     }
+
     username.value = "";
     password.value = "";
-    gender.value = "";
-    hobby.value = "";
     username.focus();
     displayData();
-    
 })
 
 function displayData(){
@@ -72,6 +67,7 @@ function displayData(){
          </td>
         `
         tableRow.append(row);
+      
     })
 }
 displayData();
