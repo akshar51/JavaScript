@@ -3,35 +3,35 @@ let password = document.getElementById("password");
 let form = document.getElementById("form");
 let tableRow = document.querySelector("#table tbody");
 let updateBtn = document.getElementById("updateBtn");
-let gender = document.querySelectorAll("input[name='gender']");
-let hobby = document.querySelectorAll("input[name = 'hobby']");
+let gender = document.querySelectorAll("input[type='radio']");
+let hobby = document.querySelectorAll("input[type ='checkbox']");
 let dataStore = [];
-let str = [];
 let editIdx = -1;
 username.focus();
 
 form.addEventListener("submit",(event)=>{
     event.preventDefault(); 
-    
+    let genders = '';
+    let hobbyArr = []; 
+
     if(gender[0].checked){
-       gender.value = gender[0].value;
+       genders = gender[0].value;
     }
     else{
-        gender.value = gender[1].value;
+        genders = gender[1].value;
     }
 
-    str=[];
-    hobby.forEach((val)=>{
-        if(val.checked){
-          str.push(val.value);
+    for(i=0;i<hobby.length;i++){
+        if(hobby[i].checked){
+            hobbyArr.push(hobby[i].value);
         }
-    })
+    }
 
     let obj ={
         username : username.value,
         password : password.value,
-        gender : gender.value,
-        hobby : str.toString()
+        gender : genders,
+        hobby : hobbyArr
     }
 
     if(editIdx == -1){
@@ -44,7 +44,7 @@ form.addEventListener("submit",(event)=>{
         updateBtn.classList.add("btn-success")
         updateBtn.classList.remove("btn-primary")
     }
-
+    console.log(hobbyArr)
     username.value = "";
     password.value = "";
     username.focus();
