@@ -5,7 +5,8 @@ let tableRow = document.querySelector("#table tbody");
 let updateBtn = document.getElementById("updateBtn");
 let gender = document.querySelectorAll("input[type='radio']");
 let hobby = document.querySelectorAll("input[type ='checkbox']");
-let dataStore = [];
+let select = document.querySelectorAll("select option");
+let dataStore = JSON.parse(localStorage.getItem("UserData")) || [];
 let editIdx = -1;
 username.focus();
 
@@ -13,7 +14,8 @@ form.addEventListener("submit",(event)=>{
     event.preventDefault(); 
     let genders = '';
     let hobbyArr = []; 
-
+    let city = [];
+    // Gender
     if(gender[0].checked){
        genders = gender[0].value;
     }
@@ -21,9 +23,17 @@ form.addEventListener("submit",(event)=>{
         genders = gender[1].value;
     }
 
-    for(i=0;i<hobby.length;i++){
+    // Hobby
+    for(let i=0;i<hobby.length;i++){
         if(hobby[i].checked){
             hobbyArr.push(hobby[i].value);
+        }
+    }    
+
+    // Select
+    for(let j=1;j<select.length;j++){
+        if(select[j].selected){
+            city.push(select[j].value);
         }
     }
 
@@ -31,9 +41,10 @@ form.addEventListener("submit",(event)=>{
         username : username.value,
         password : password.value,
         gender : genders,
-        hobby : hobbyArr
+        hobby : hobbyArr,
+        select : city
     }
-
+    // Data store
     if(editIdx == -1){
         dataStore.push(obj);
     }
@@ -44,11 +55,12 @@ form.addEventListener("submit",(event)=>{
         updateBtn.classList.add("btn-success")
         updateBtn.classList.remove("btn-primary")
     }
-    console.log(hobbyArr)
+    localStorage.setItem("UserData",JSON.stringify(dataStore));
     username.value = "";
     password.value = "";
     username.focus();
     displayData();
+
 })
 
 function displayData(){
@@ -61,6 +73,7 @@ function displayData(){
          <td>${data.password}</td>
          <td>${data.gender}</td>
          <td>${data.hobby}</td>
+         <td>${data.select}</td>
          <td></td>
          <td><button class="btn btn-warning px-3 me-2"  onclick="editData(${idx})">Edit</button>
              <button class="btn btn-danger" onclick="deleteData(${idx})">Delete</button>
@@ -83,6 +96,7 @@ let editData = (idx)=>{
     password.value = newUser.password;
     gender.value = newUser.gender;
     hobby.value = newUser.hobby;
+    select.value = newUser.select
     // username.value = dataStore[idx].username;
     // password.value = dataStore[idx].password;
     editIdx = idx;
