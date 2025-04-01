@@ -6,7 +6,7 @@ let updateBtn = document.getElementById("updateBtn");
 let gender = document.querySelectorAll("input[type='radio']");
 let hobby = document.querySelectorAll("input[type ='checkbox']");
 let select = document.querySelectorAll("select option");
-let dataStore = JSON.parse(localStorage.getItem("UserData")) || [];
+let dataStore = JSON.parse(localStorage.getItem("user")) || [];
 let editIdx = -1;
 username.focus();
 
@@ -55,7 +55,8 @@ form.addEventListener("submit",(event)=>{
         updateBtn.classList.add("btn-success")
         updateBtn.classList.remove("btn-primary")
     }
-    localStorage.setItem("UserData",JSON.stringify(dataStore));
+
+    localStorage.setItem("user",JSON.stringify(dataStore));
     username.value = "";
     password.value = "";
     username.focus();
@@ -74,7 +75,6 @@ function displayData(){
          <td>${data.gender}</td>
          <td>${data.hobby}</td>
          <td>${data.select}</td>
-         <td></td>
          <td><button class="btn btn-warning px-3 me-2"  onclick="editData(${idx})">Edit</button>
              <button class="btn btn-danger" onclick="deleteData(${idx})">Delete</button>
          </td>
@@ -87,7 +87,9 @@ displayData();
 
 let deleteData = (idx)=>{
     dataStore.splice(idx,1);
+    localStorage.setItem("user",JSON.stringify(dataStore));
     displayData();
+   
 }
 
 let editData = (idx)=>{
