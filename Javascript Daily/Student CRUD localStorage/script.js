@@ -64,6 +64,7 @@ form.addEventListener("submit",(event)=>{
     localStorage.setItem("user",JSON.stringify(dataStore));
     username.value = "";
     password.value = "";
+    select[0].selected = true;
     username.focus();
     displayData();
 
