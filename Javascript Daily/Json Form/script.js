@@ -10,11 +10,13 @@ let dataStore = JSON.parse(localStorage.getItem("user")) || [];
 let editIdx = -1;
 username.focus();
 
+
 form.addEventListener("submit",(event)=>{
     event.preventDefault(); 
     let genders = '';
     let hobbyArr = []; 
     let city = [];
+
     // Gender
     if(gender[0].checked){
        genders = gender[0].value;
@@ -40,9 +42,9 @@ form.addEventListener("submit",(event)=>{
         if(select[j].selected){
             city.push(select[j].value);
         }
-        select[0].selected = true;
     }
-
+    console.log(select[0]);
+    
     let obj ={
         username : username.value,
         password : password.value,
@@ -65,6 +67,7 @@ form.addEventListener("submit",(event)=>{
     localStorage.setItem("user",JSON.stringify(dataStore));
     username.value = "";
     password.value = "";
+    select[0].selected = true;
     username.focus();
     displayData();
 
@@ -100,6 +103,7 @@ let deleteData = (idx)=>{
 
 let editData = (idx)=>{
     let newUser = dataStore.filter((_,index)=>idx==index)[0];
+    console.log(newUser)
     username.value = newUser.username;
     password.value = newUser.password;
     gender.value = newUser.gender;

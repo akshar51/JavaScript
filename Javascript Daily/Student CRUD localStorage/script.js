@@ -14,7 +14,7 @@ form.addEventListener("submit",(event)=>{
     event.preventDefault(); 
     let genders = '';
     let hobbyArr = []; 
-    let city = [];
+    let course = [];
     // Gender
     if(gender[0].checked){
        genders = gender[0].value;
@@ -38,10 +38,7 @@ form.addEventListener("submit",(event)=>{
     // Select
     for(let j=1;j<select.length;j++){
         if(select[j].selected){
-            city.push(select[j].value);
-        }
-        for(let i=0;i<hobby.length;i++){
-            city[i].checked = false;
+            course.push(select[j].value);
         }
     }
 
@@ -50,7 +47,7 @@ form.addEventListener("submit",(event)=>{
         password : password.value,
         gender : genders,
         hobby : hobbyArr,
-        select : city
+        select : course
     }
     // Data store
     if(editIdx == -1){
