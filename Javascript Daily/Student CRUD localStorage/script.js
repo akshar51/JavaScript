@@ -40,6 +40,9 @@ form.addEventListener("submit",(event)=>{
         if(select[j].selected){
             city.push(select[j].value);
         }
+        for(let i=0;i<hobby.length;i++){
+            city[i].checked = false;
+        }
     }
 
     let obj ={

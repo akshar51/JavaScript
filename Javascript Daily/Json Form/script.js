@@ -30,6 +30,9 @@ form.addEventListener("submit",(event)=>{
         if(hobby[i].checked){
             hobbyArr.push(hobby[i].value);
         }
+        for(let j=0;j<hobby.length;j++){
+            hobby[i].checked = false;
+        }
     }    
 
     // Select
@@ -37,6 +40,7 @@ form.addEventListener("submit",(event)=>{
         if(select[j].selected){
             city.push(select[j].value);
         }
+        select[0].selected = true;
     }
 
     let obj ={
