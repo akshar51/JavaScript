@@ -64,6 +64,7 @@ form.addEventListener("submit",(event)=>{
         updateBtn.classList.remove("btn-primary")
     }
 
+
     localStorage.setItem("user",JSON.stringify(dataStore));
     username.value = "";
     password.value = "";
