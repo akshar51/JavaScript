@@ -4,7 +4,8 @@ let form = document.getElementById("form");
 let p_name = document.getElementById("p_name");
 let price = document.getElementById("price");
 let table = document.querySelector("#table tbody")
-let ulData = document.querySelector(".offcanvas-body ul")
+let canvasData = document.querySelector(".offcanvas-body")
+console.log(canvasData)
 p_name.focus();
 
 form.addEventListener("submit",(e)=>{
@@ -16,7 +17,7 @@ form.addEventListener("submit",(e)=>{
     }
     
     data.push(obj);
-    localStorage.setItem("productData",JSON.stringify(data))
+    localStorage.setItem("productData",JSON.stringify(data));
     p_name.value = "";
     price.value="";
     p_name.focus()
@@ -41,27 +42,34 @@ const display=()=>{
         table.append(tr)
     })
 }
-display()
+display();
+
 
 const addTocart = (idx)=>{
-
     const product = data[idx]; 
     cart.push(product)
     localStorage.setItem("cart",JSON.stringify(cart));
+    displayCart();
+}
 
-    ulData.innerHTML = "";
-    cart.map((val,idx)=>{
-        let li = document.createElement("li")
-        li.innerHTML = 
+const displayCart = ()=>{
+
+    canvasData.innerHTML = "";
+
+    cart.forEach((val,idx)=>{
+        let div = document.createElement("div");
+        div.className = "d-flex p-4 border border-2"
+        div.innerHTML = 
         `
-        <td>${val.p_name}</td>
-        <td>${val.price}</td>
-        <td>
-            <button class="btn btn-danger" onclick="cartData(${idx})">Delete</button>
-        </td>
-        
+        <div class="w-100">
+          <p class="mb-0">${val.p_name}</p>
+          <p>${val.price}</p>
+        </div>
+        <div class="my-auto">
+          <button class="btn btn-danger" onclick="cartData(${idx})">Delete</button>
+        </div>
         `
-        ulData.append(li)
+        canvasData.append(div)
     })
 }
 
@@ -71,8 +79,8 @@ const deleteData = (idx)=>{
     localStorage.setItem("productData",JSON.stringify(data))
 }
 
-const cartData = (idx)=>{
-    cart.splice(idx,1);
-    display();
+const cartData = (index)=>{
+    cart.splice(index,1);
+    displayCart()
     localStorage.setItem("cart",JSON.stringify(cart))
 }
